@@ -29,7 +29,6 @@ cd $logDir && cp access.log ${dayPath} && :> access.log &&
 #  通知nginx重新打开日志文件
 kill -USR1  `cat /usr/share/nginx/logs/nginx.pid` &&
 
-
 #  打包访问日志
 tar -czf "${dayPath}.tar.gz" "${dayPath}" &&
 
