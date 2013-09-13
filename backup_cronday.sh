@@ -1,38 +1,53 @@
 #!/bin/bash
-#
+# 
+#	Created by Long Luo@2013.09.13
 #
 
-export JAVA_HOME='/usr/share/jdk1.7.0_21'
-export PATH=$PATH:$JAVA_HOME/bin
 
-blog=/home/coderbee/blog/
-bakDir=${blog}dataBak
+BAIDU_BCS_PATH=/home/MyWebsite/baidu_bcs
+
+#
+BAIDU_BCS_UPLOADER=/home/MyWebsite/baidu_bcs/bsutil.sh
+
+blog=/home/wwwroot/imlongluo/
+bakDir=/home/databak
 
 # 用mysqldump命令把博客的数据库导出来，然后用vpsBack.jar上传的Dropbox，
-# vpsBack.jar是用Dropbox的API写的一个小工具，只有简单的上传功能。
-/usr/share/mysql/bin/mysqldump -u wpblog -p'password' blog > ${bakDir}/blog-bak.sql.tmp 2>/dev/null &&
- mv ${bakDir}/blog-bak.sql.tmp ${bakDir}/blog-bak.sql  &&
- java -jar ${blog}vpsBack.jar upload vpsBak4coderbee/db/`date -d"yesterday" +"%Y%m%d"`/ ${bakDir}/blog-bak.sql &&
- echo "backup sql to dropbox ok ."
+/usr/local/mysql/bin/mysqldump -u root -p'root' blog > ${bakDir}/blog-bak.sql.tmp 2>/dev/null 
 
+# Rename the Sql DB.
+mv ${bakDir}/blog-bak.sql.tmp ${bakDir}/blog-bak.sql  
 
+pwd
+tar -czf "${bakDir}.tar.gz" "${bakDir}"
+pwd
+
+# upload the Database & backup the data
+#${BAIDU_BCS_UPLOADER} -f 
+./bsutil.sh cp "${bakDir}.tar.gz" "bs://vpsremotebackup/`date -d"yesterday" +"%Y%m%d"`DataBak"
+pwd
+
+# completed
+echo "Backup SQL Database to BCS Okay."
+rm ${bakDir}.tar.gz
+
+ 
 #  一个月的访问日志放在以月份命名的文件夹下，同一年的月份的文件夹放在以年命名的文件夹下。
-monDir=${bakDir}/weblog/$(date -d"yesterday" +"%Y")/$(date -d"yesterday" +"%m")
-dayPath=$(date -d"yesterday" +"%d").log
-[ -d "${monDir}" ] || mkdir -p ${monDir}
+monthLogDir=${bakDir}/weblog/$(date -d"yesterday" +"%Y")/$(date -d"yesterday" +"%m")
+dayLogPath=$(date -d"yesterday" +"%d").log
+[ -d "${monthLogDir}" ] || mkdir -p ${monthLogDir}
 
 
-logDir=/usr/share/nginx/logs
+logDir=/home/wwwlogs/
 
 #  nginx日志拷贝、清理、切换
-cd $logDir && cp access.log ${dayPath} && :> access.log &&
+cd ${logDir} && cp access.log ${dayLogPath} && :> access.log &&
 #  通知nginx重新打开日志文件
-kill -USR1  `cat /usr/share/nginx/logs/nginx.pid` &&
+kill -USR1  `cat /usr/local/nginx/logs/nginx.pid` &&
 
 #  打包访问日志
-tar -czf "${dayPath}.tar.gz" "${dayPath}" &&
+tar -czf "${dayLogPath}.tar.gz" "${dayLogPath}" 
 
 #  备份访问日志
-rm -f ${dayPath} && mv -f "${dayPath}.tar.gz" ${monDir} &&
-chown -R coderbee:appgroup ${bakDir} && echo "backup web log down"
-
+rm -f ${dayLogPath} && mv -f "${dayLogPath}.tar.gz" ${monthLogDir} &&
+chown -R www:www ${bakDir} && echo "backup web log done"

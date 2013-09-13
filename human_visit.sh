@@ -1,10 +1,9 @@
 #!/bin/bash
 #
 
-log="/usr/local/nginx/logs/access.log"
+log="/home/wwwlogs/access.log"
 
-awk -F"\"" '$2 ~ /(GET \/ HTTP.*)|(\/index.php\/[a-zA-Z]*\/[0-9]+\/[0-9]+ .*)|(\/html5\/[a-zA-Z0-9]+.html .*)/ && $6 !~
-/(http:\/\/|Java|robot|.com|Wget|PHP|Reeder|Spider|(^-$)|ips-agent|@|Python|bot|NING)/ {
+awk -F"\"" '$2 ~ /(GET \/ HTTP.*)|(\/index.php\/[a-zA-Z]*\/[0-9]+\/[0-9]+ .*)|(\/html5\/[a-zA-Z0-9]+.html .*)/ && $6 !~/(http:\/\/|Java|robot|.com|Wget|PHP|Reeder|Spider|(^-$)|ips-agent|@|Python|bot|NING)/ {
     if ( $4 ~ /http:\/\// )
     {
         refer=substr($4, 8)
