@@ -2,11 +2,11 @@
 #
 #
 
-cd /home/coderbee/blog/
+cd /home/MyWebsite/
 sortIps=sortIpx
 
 #  过滤出访问日志里4xx状态、访问的URL里包含 admin|Admin|scripts且以php后缀结尾的IP
-awk -F'"' '$3~/4.. [0-9]+/ && $2 ~ /GET \/.*(admin|Admin|scripts).+(index|setup)\.php/ {print $0}' /usr/share/nginx/logs/access.log | awk '{print $1}' >> evilIP
+awk -F'"' '$3~/4.. [0-9]+/ && $2 ~ /GET \/.*(admin|Admin|scripts).+(index|setup)\.php/ {print $0}' /home/wwwlogs/access.log | awk '{print $1}' >> evilIP
 
 sort evilIP | uniq > evilIP.tmp && mv evilIP{.tmp,}
 
