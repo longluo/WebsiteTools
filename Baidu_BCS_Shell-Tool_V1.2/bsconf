@@ -1,0 +1,39 @@
+#!/bin/sh
+ak=FFFFFFFFFFFF
+sk=EEEEEEEEEEEE
+
+
+#向bs_host发送请求
+bs_host=bcs.duapp.com
+
+
+#If the file's size is greater than the MULTI_UPLOAD_LEN_LIMIT,it will be splitted to several parts.
+#(unit:b(byte),k,m,g, byte is default unit.)
+#文件大小超过MULTI_UPLOAD_LEN_LIMIT,则采用并发上传，并发数由put_thread_num设置
+MULTI_UPLOAD_LEN_LIMIT=256m
+
+#openssl path
+openssl_path=/usr/bin/openssl
+
+#如果将object分开若干个小文件上传，然后再组成一个superfile, 当上传superfile成功时
+#设置delete_superfile_temp_file为1，表示删除那些已经上传的小文件，为0，则不删除
+delete_superfile_temp_file=1
+#如果将object分开若干个小文件上传，然后再组成一个superfile, 当上传superfile失败时
+#设置delete_superfile_failed_temp_file为1，表示删除那些已经上传的小文件，为0，则不删除
+delete_superfile_failed_temp_file=1
+
+#当delete_fail_log_file为1时，则删除Log文件，为0，不删除
+delete_fail_log_file=1
+
+#get_thread_num表示并发下载数
+get_thread_num=2
+
+#get_retry_num表示并发下载的重试次数
+get_retry_num=3
+
+
+#put_thread_num表示并发上传数
+put_thread_num=2
+
+#put_retry_num表示上传的重试次数
+put_retry_num=3
