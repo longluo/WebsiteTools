@@ -5,7 +5,7 @@
 DROPBOX_DIR="/dropbox"
 
 #需要备份数据的目录，多个目录使用空格分开
-BACKUP_SRC="/home/wwwroot/XXX /home/wwwroot/YYY"
+BACKUP_SRC="/home/wwwroot/imlongluo"
 
 #待上传的压缩包临时目录
 BACKUP_DST="/tmp"
@@ -17,7 +17,7 @@ MYSQL_SERVER="127.0.0.1"
 MYSQL_USER="root"
 
 #mysql密码
-MYSQL_PASS="7758521"
+MYSQL_PASS="root"
 
 NOW=$(date +"%Y.%m.%d")
 

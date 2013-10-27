@@ -94,7 +94,7 @@ while getopts ":qpskdf:" opt; do
     ;;
     
     k)
-      CURL_ACCEPT_CERTIFICATES="-k"
+      #CURL_ACCEPT_CERTIFICATES="-k"
     ;;
 
     s)
