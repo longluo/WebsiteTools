@@ -25,7 +25,7 @@ NOW=$(date +"%Y.%m.%d")
 DESTFILE="$BACKUP_DST/$NOW.tgz"
 
 #dump数据库，如备份整个数据库PASS后面使用 --all-databases
-mysqldump -u $MYSQL_USER -h $MYSQL_SERVER -p$MYSQL_PASS -B 数据库名1 数据库名2 > "$NOW-Databases.sql"
+mysqldump -u $MYSQL_USER -h $MYSQL_SERVER -p$MYSQL_PASS -B --all-databases > "$NOW-Databases.sql"
 
 #备份目录和数据库
 #tar cfz "$DESTFILE" $BACKUP_SRC "$NOW-Databases.sql"
