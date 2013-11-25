@@ -24,7 +24,7 @@ if(isWebApp) {
 
 function completed() {
 	$(".panel").show();
-	$.getScript("/js/map-data.js?v=20130510", function(){ // 异步载入地图
+	$.getScript("/js/map_data.js?v=20131125", function(){ // 异步载入地图
 		$("#map svg").show();
 	});
 	
