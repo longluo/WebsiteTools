@@ -1,6 +1,12 @@
-// Developed by Long Luo
-// October 2013
-// http://www.imlongluo.com
+/* 
+		JavaScript Document 
+	Name: home.js 
+	Author: Long Luo
+	Version: 1.1  
+	Website: http://www.imlongluo.com 
+	Create at 12th, Oct., 2013.
+	Modified at 25th, Nov.,2013 
+*/
 
 window.addEventListener('load', function(){  
 	setTimeout(scrollTo, 0, 0, 1);  
