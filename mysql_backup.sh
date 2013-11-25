@@ -8,7 +8,7 @@ DROPBOX_DIR="/dropbox"
 BACKUP_SRC="/home/wwwroot/imlongluo"
 
 #待上传的压缩包临时目录
-BACKUP_DST="/tmp"
+BACKUP_DST="/home/VpsBackup"
 
 #mysql地址
 MYSQL_SERVER="127.0.0.1"
@@ -30,13 +30,13 @@ mysqldump -u $MYSQL_USER -h $MYSQL_SERVER -p$MYSQL_PASS -B --all-databases > "$N
 #备份目录和数据库
 #tar cfz "$DESTFILE" $BACKUP_SRC "$NOW-Databases.sql"
 #只备份数据库：
-tar cfz "$DESTFILE" "$NOW-Databases.sql"
+#tar cfz "$DESTFILE" "$NOW-Databases.sql"
 
 #执行脚本的上传命令
-./dropbox_uploader.sh upload "$DESTFILE" "$DROPBOX_DIR/$NOW.tgz"
+#./dropbox_uploader.sh upload "$DESTFILE" "$DROPBOX_DIR/$NOW.tgz"
 
 #删除临时文件
-rm -f "$NOW-Databases.sql" "$DESTFILE"
+#rm -f "$NOW-Databases.sql" "$DESTFILE"
 
 #删除7天前的文件
 odata=$(date -d -7day +"%Y.%m.%d").tgz
