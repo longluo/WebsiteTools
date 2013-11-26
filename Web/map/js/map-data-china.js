@@ -1,8 +1,13 @@
-// JavaScript Document 
-
-// Location Data - Simplified Edition - China 
-// UPDATE: JULY 2013 
-// http://www.dandyweng.com 
+/* 
+		JavaScript Document 
+	Simplified Edition
+	
+	Name: Location Data 
+	Author: Long Luo
+	Version: 1.01  
+	Website: http://www.imlongluo.com 
+	Date: 26th, Nov.,2013 
+*/
 
 //$('#map').vectorMap({map: 'cn_merc_en'});
 $('#map').vectorMap({
