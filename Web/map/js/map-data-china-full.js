@@ -60,7 +60,7 @@ $('#map').vectorMap({
 				"fill-opacity": 0.8
 			},
           },
-	markers: [
+	markers: [  
 			// Born
             {latLng: [27.99, 115.96], name: '江西 丰城 小山村-我生命的原点,1988'},
 			
