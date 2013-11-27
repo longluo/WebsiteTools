@@ -1,0 +1,1677 @@
+﻿<!--
+===================================================================================
+	 _____    _____       ___   _____        _   _   _____   _____    _____  
+	|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
+	| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
+	|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
+	| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
+	|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
+
+==================================================================================
+	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
+	Version: 5.30.
+	
+-->
+
+
+<!DOCTYPE html>
+
+<script type="text/javascript">
+	var date = new Date();
+	date.setDate(date.getDate() + 365);　
+	var ratio  = 'ratio=' + window.devicePixelRatio + '; expires=' + date.toGMTString();
+	var screenwidth = 'screenwidth=' + window.screen.width + '; expires=' + date.toGMTString();
+	document.cookie = ratio;
+	document.cookie = screenwidth;
+	if(window.devicePixelRatio > 1){
+		document.location.reload(true);
+	}
+</script>
+
+<!--[if lt IE 9]>
+<html id="ie8" lang="zh-CN">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="zh-CN" manifest="cache.manifest">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+<meta name="Description" content="罗龙（Long Luo）的个人网站。A Programmer." />
+<meta name="keywords" content="罗龙, Long Luo" />
+<meta name="Author" contect="Long Luo" / >
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+<meta name="format-detection" content="telephone=no" />
+<link rel="shortcut icon" href="./images/favicon.ico" />
+<link rel="icon" href="./images/favicon.ico" />
+
+<!-- iOS Web App -->
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-title" content="Long Luo | 罗龙" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<link rel="apple-touch-icon-precomposed" href="/images/ios/icon.png" />
+
+<!-- iPhone -->
+<link href=""
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image" />
+
+<!-- iPhone (Retina) -->
+<link href=""
+      media="(device-width: 320px) and (device-height: 480px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image" />
+
+<!-- iPhone 5 -->
+<link href=""
+      media="(device-width: 320px) and (device-height: 568px)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image" />
+
+<!-- iPad -->
+<link href="
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image" />
+<link href=""
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 1)"
+      rel="apple-touch-startup-image" />
+
+<!-- iPad (Retina) -->
+<link href=""
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: portrait)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image" />
+<link href=""
+      media="(device-width: 768px) and (device-height: 1024px)
+         and (orientation: landscape)
+         and (-webkit-device-pixel-ratio: 2)"
+      rel="apple-touch-startup-image" />
+
+	  
+<!-- Bootstrap  -->
+<link href="./bootstrap/global.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="./bootstrap/responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
+
+<!-- jVectormap -->
+<link href="./map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="http://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="./js/html5.js"></script> 
+<![endif]-->
+
+<title>罗龙 | Long Luo</title>
+
+<style>
+
+/* = Designed and Developed by Long Luo  */
+/* ----------------------------------------------- */
+
+/* = 通用 Global                           */
+/*----------------------------------------------- */
+body {
+	background: #e5e5e5 url("http://bcs.duapp.com/databank/images%2Fpatterns%2Fmooning.jpg");
+	overflow-x: hidden;
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+img, p {
+	-webkit-touch-callout: none;
+}
+p, h4 {
+	font: 500 15px/1.8 'Optima', 'Verdana', 'Microsoft Yahei', sans-serif;
+	cursor: default;
+}
+a:not(.btn) {
+	color: #00699E;
+	-webkit-transition: 300ms;
+	-moz-transition: 300ms;
+	transition: 300ms;
+}
+a:hover:not(.btn),
+a:active:not(.btn) {
+	color: #9E0000;
+	text-decoration: none;
+	-webkit-transform: translateY(-8px);
+	-moz-transform: translateY(-8px);
+	transform: translateY(-8px);
+}
+.padding-huge {
+	padding: 27px;
+}
+.padding-large {
+	padding: 45px;
+}
+.padding-middle {
+	padding: 25px;
+}
+.no-radius {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;	
+}
+p.wo:first-letter {
+	font-size: 115%;
+	padding-right: 1px;	
+}
+.relative {
+	position: relative;
+}
+.button {
+	margin: 20px auto;
+}
+hr.soften {
+	height: 1px;
+	margin: 30px 0;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
+	border: 0;
+}
+/* = 部件 Components
+----------------------------------------------- */
+.nav a {
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+header {
+	margin-top: 40px;	
+}
+.hero-unit {
+	position: relative;
+	background: url("/images/hawaii_ship.jpg");
+	background-size: cover;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/hawaii_ship.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/hawaii_ship.jpg', sizingMethod='scale')";
+	color: #fff;
+	height: 480px;	
+	margin-bottom: 0;
+}
+.hero-unit h1 {
+	/* font: 88px Minion,'Optima', "Times New Roman", Times, serif; */
+	text-align: center;
+	text-shadow: 1px 1px 10px black;
+}
+.hero-unit img {
+	max-width: 500px;
+	-webkit-animation: title-in 1s ease-out 0 1 forwards;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+
+}
+.hero-unit img:hover {
+	-webkit-transform: translateY(-5px) scale(1.05) rotate(2deg);
+	-moz-transform: translateY(-5px) scale(1.05) rotate(2deg);
+	transform: translateY(-5px) scale(1.05) rotate(2deg);
+}
+.hero-unit .banner-link {
+	position: absolute;
+	right: 5px;
+	bottom: 8px;
+	text-align: right;
+	text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.7);
+	font: 200 12px/1.8 'Optima','Songti SC','Verdana','Microsoft Yahei',simsun,serif;
+}
+.hero-unit .banner-link a {
+	color: white;
+	color: rgba(255, 255, 255, 0.9);
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+.hero-unit .banner-link a:hover {
+	color: white;
+}
+.description {
+	position: relative;
+	margin-top: -267px;
+	-webkit-animation: description-in 1s ease-out 0 1 forwards;
+}
+.description h3, 
+.description h4 {
+	cursor: default;
+}
+#loading {
+	position: relative;
+	background: -webkit-gradient( linear, left bottom, left top, color-stop(0.2, rgba(0, 0, 0, 0.8)), color-stop(0.50, rgba(0, 0, 0, 0.7)), color-stop(0.80, rgba(0, 0, 0, 0.6)) );
+	width: 100px;
+	height: 100px;
+	margin: 0px auto 80px;
+	color: #FFF;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.35), 1px 1px 50px 8px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.35), 1px 1px 50px 8px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 1px 5px 3px rgba(0, 0, 0, 0.35), 1px 1px 50px 8px rgba(0, 0, 0, 0.4);
+	-webkit-animation: spinner-in 1s linear 0 1 forwards;
+}
+#loading .spinner {
+	position: absolute;
+	max-width: 80px;
+	left: 10px;
+	top: -15px;
+}
+#loading span {
+	position: absolute;
+	display: block;
+	width: 100%;
+	bottom: 10px;
+	white-space: nowrap;
+	text-shadow: 1px 1px 3px #000;
+	font-size: 12px;
+	font-weight: 200;
+	line-height: 2;
+	color: #E5E5E5;
+	cursor: default;
+}
+.shadow {
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0, 0, 0, 0.2)), color-stop(100%,rgba(255, 255, 255, 0)));
+	border-top: 1px solid #e0e0e0;	
+	z-index: -999;
+}
+img.profile {
+	max-width: 100px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+	
+	-webkit-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 0px 2px 3px rgba(255, 255, 255, 0.7), 0px 0px 30px 8px rgba(0, 0, 0, 0.25);
+}
+img.profile:hover {
+	-webkit-animation: profile-img-hover 1000ms ease-out 100ms infinite forwards;
+}
+img.profile:active {
+	-webkit-animation: profile-img-active 500ms linear 0 infinite forwards;
+}
+img.profile.loading {
+	/* -webkit-animation: profile-img-loading 500ms linear 0 infinite alternate; 这加载动画似乎在某些情况下会一直显示造成困扰，暂时先去掉 */
+}
+#aboutMaps small {
+	color: #969696;
+	font-size: 70%;
+}
+#aboutMaps .modal-header h3 {
+	-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));
+}
+.item {
+	max-height: 513px;
+}
+.carousel {
+	margin-bottom: 0;
+}
+#photograph .carousel-inner, 
+#photograph .carousel-inner > .item > img, 
+#photograph .carousel-inner > .item > a > img {
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;		
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-bottom-left-radius: 6px;
+	-moz-border-top-left-radius: 6px;	
+	-moz-border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	border-bottom-left-radius: 6px;
+}
+#photograph .carousel-inner:hover {
+	-webkit-filter: grayscale(0.8);
+	-webkit-transform: translateZ(0);
+}
+.carousel-indicators {
+	bottom: 20px;
+	right: 15px;
+	top: auto;
+}
+a.carousel-control:hover,
+a.carousel-control:focus,
+a.carousel-control {
+	color: #FFF;
+}
+.screenshots {
+	margin-top: 3px;
+	margin-left: -40px;
+}
+.screenshot-img {
+	max-width: 475px;
+}
+.iphone-mockup {
+	padding-right: 75px;
+	margin-top: 60px;
+}
+.screenshots .carousel-inner {
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-bottom-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.ribbon-apple {
+	position: absolute;
+	top: -5px;
+	right: 30px;
+	max-width: 70px;	
+}
+.ipad-news { 
+	max-width: 100%;
+}
+.muiti-contact {
+	font: 400 50px/1.8 'Quattrocento Sans', 'Optima', 'Verdana', 'Microsoft Yahei', sans-serif;
+	text-align: center;
+	cursor: default;
+	color: rgba(0, 0, 0, 0.4);
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	-webkit-user-select: text;
+}
+.hover {
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.41);
+}
+.fadeout {
+	color: rgba(0, 0, 0, 0.1);
+	text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.muiti-contact,
+.hover,
+.fadeout,
+email,
+at,
+sns,
+web {
+	-webkit-transition: all .35s linear .2s;
+	-moz-transition: all .35s linear .2s;
+	transition: all .35s linear .2s;
+}
+.sns {
+	margin: 0 auto;
+	max-width: 1040px;
+}
+.sns-container {
+	position: relative;	
+	max-width: 520px;
+	margin: 0 auto;
+}
+
+.sns-icon {
+	position: relative;
+	border-radius: 13px;
+	margin: 0 30px 60px;
+	width: 70px;
+	float: left;
+	
+	-webkit-box-shadow: 0px 2px 8px 1.5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+	-moz-box-shadow: 0px 2px 8px 1.5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+	box-shadow: 0px 2px 8px 1.5px rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+ 
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+ 
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	
+	-webkit-filter: blur(0) grayscale(0.2);
+	-webkit-transform: translateZ(0);
+}
+.sns-icon:hover {
+	-webkit-filter: none;
+	-webkit-animation: sns-icon-hover 100ms linear .8s infinite alternate;
+}
+.sns-icon:before {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 50%;
+	top: 0;
+	left: 0;
+ 
+	-webkit-border-radius: 13px;
+	-moz-border-radius: 13px;
+	border-radius: 13px;
+	
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+ 
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.7) 0%, rgba(255,255,255,.1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.7)), color-stop(100%,rgba(255,255,255,.1)));
+	background: linear-gradient(top, rgba(255,255,255,0.7) 0%,rgba(255,255,255,.1) 100%);
+}
+.sns-icon:hover:before {
+	height: 0;
+	
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+	
+	background: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,.1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,.1)));
+	background: linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,.1) 100%);}
+
+.sns-icon:after {
+	position: absolute;
+	content: ' ';
+	width: 100%;
+	height: 30px;
+	bottom: -31px;
+	left: 0;
+ 
+	-webkit-border-top-left-radius: 13px;
+	-webkit-border-top-right-radius: 13px;
+	-moz-border-radius-topleft: 13px;
+	-moz-border-radius-topright: 13px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+ 
+	background: -moz-linear-gradient(top, rgba(230,230,230,.3) 0%, rgba(230,230,230,0) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(230,230,230,.3)), color-stop(100%,rgba(230,230,230,0)));
+	background: linear-gradient(top, rgba(230,230,230,.3) 0%,rgba(230,230,230,0) 100%);
+}
+.sns-icon img {
+	-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, color-stop(30%,rgba(255, 255, 255, 0.0)), color-stop(80%,rgba(255, 255, 255, 0.1)), color-stop(100%,rgba(255, 255, 255, .3)));
+}
+.sns-fadeout {
+	opacity: 0.5;
+	-webkit-filter: blur(5px) grayscale(0.6);
+}
+.ribbon-version {
+	position: absolute;
+	top: -11px;
+	right: -15px;
+	max-width: 150px;	
+}
+.img-responsive {
+	max-width: 350px;
+	-webkit-box-reflect: below -65px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));s
+}
+#website p:not(small) {
+	-webkit-box-reflect: below -13px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));
+}
+a.thumbnail {
+	color: #333;
+	text-decoration: none;
+}
+a.thumbnail:hover {
+	-webkit-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1),1px 1px 30px 5px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1),1px 1px 30px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.1),1px 1px 30px 5px rgba(0, 0, 0, 0.2);
+	color: #333;
+
+}
+a.thumbnail img {
+	-webkit-filter: blur(1px) grayscale(0.8);
+	-webkit-transform: translateZ(0);
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+	
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+a.thumbnail:hover img {
+	-webkit-filter: none;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+a.thumbnail h4 {
+	font-size: 24.5px;
+	line-height: 1;
+	-webkit-box-reflect: below -4px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));
+}
+a.thumbnail p {
+	font-size: 12px;
+	font-weight: 100;
+	line-height: 1.6;
+}
+a.thumbnail small {
+	font-size: 95%;
+}
+.statusbar {
+	position: relative;
+	height: 20px;
+	width: 100%;
+	background: #212121;
+	overflow: hidden;
+}
+#back-to-top {
+	width: 48px;
+	height: 48px;
+	right: 40px;
+	margin: 50px auto 20px;
+	background: white;
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: 24px;
+	box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0px 10px 70px 8px rgba(0, 0, 0, 0.20);
+	cursor: pointer;
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-transition: background 300ms;
+	-moz-transition: background 300ms;
+	-ms-transition: background 300ms;
+	-o-transition: background 300ms;
+	transition: background 300ms;
+}
+#back-to-top:hover {
+	background: #9d9d9d;
+	background: rgba(255, 255, 255, 0.6);
+}
+#back-to-top #rocket path {
+	fill: #bbb;
+	-webkit-transition: all 300ms;
+	-moz-transition: all 300ms;
+	-ms-transition: all 300ms;
+	-o-transition: all 300ms;
+	transition: all 300ms;
+}
+#back-to-top:hover #rocket path {
+	fill: rgba(255, 102, 0, 0.76);
+}
+#back-to-top #rocket {
+    margin-top: 7px;
+}
+/* = 框架 Panels
+----------------------------------------------- */
+.panel {
+	display: none;
+	background: #FFF url("http://bcs.duapp.com/databank/images%2Fpatterns%2Fwhite_wall_hash.jpg");
+	padding: 0px;
+	margin-bottom: 120px;
+	color: #333;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	/*
+	-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+	-moz-box-shadow: 0 1px 2px rgba(0,0,0, .075);
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
+	*/
+	-webkit-animation: panel-in 1s linear 0 1;
+	-webkit-box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow:    0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
+	-ms-box-shadow:     0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
+	-o-box-shadow:      0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
+	box-shadow:         0px 1px 8px 1.5px rgba(0, 0, 0, .35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25);
+}
+.panel h1, .panel h3 {
+	cursor: default;
+	background: -webkit-linear-gradient(top, rgba(70, 70, 70, 1) 0%,rgba(111, 111, 111, 1) 50%,rgba(10, 14, 10, 1) 51%,rgba(10, 8, 9, 1) 100%);
+	-webkit-box-reflect: below -7px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.2, transparent), to(rgba(3,3,3,.1)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+.panel h3 {
+	-webkit-box-reflect: below -17px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));
+}
+/*
+.panel h1:hover {
+	background: -webkit-linear-gradient(top, rgba(70, 70, 70, 1) 0%,rgba(111, 111, 111, 1) 70%,rgba(10, 14, 10, 1) 71%,rgba(10, 8, 9, 1) 100%);
+	-webkit-box-reflect: below -2px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+	-webkit-transform: translateY(-5px);
+	-webkit-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+*/
+.panel-description {
+	background: rgba(255, 255, 255, 0.80);
+	color: #333;
+	padding: 0px;
+	margin-bottom: 80px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	text-shadow: 1px 1px 2px #FFF;
+	-webkit-box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0px 20px 70px 8px rgba(0, 0, 0, 0.05); 
+	-moz-box-shadow:    0px 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0px 20px 70px 8px rgba(0, 0, 0, 0.05);
+	-ms-box-shadow:     0px 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0px 20px 70px 8px rgba(0, 0, 0, 0.05);  
+	-o-box-shadow:      0px 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0px 20px 70px 8px rgba(0, 0, 0, 0.05);
+	box-shadow:         0px 1px 8px 1.5px rgba(0, 0, 0, 0.25), 0px 20px 70px 8px rgba(0, 0, 0, 0.05);
+}
+.panel-description h3 {
+	font: 500 18px/1.8 'Optima', 'Verdana', 'Microsoft Yahei', sans-serif;
+}
+.panel-description h4 {
+	color: rgba(0, 0, 0, 0.7);
+	font-size: 14.5px;
+	line-height: 1.5;
+}
+.button-text-panel a {
+	position: relative;
+	margin: 10px;
+}
+.block-left {
+	padding: 35px 10px 15px 45px
+}
+.design {
+	padding: 0 5px 15px 45px;
+}
+.programming {
+	padding: 0 20px 10px 0;
+}
+
+/* = 地图效果 Map Effects
+----------------------------------------------- */
+#map {
+	height: 360px;
+	background: url("http://bcs.duapp.com/databank/images/map-bg.jpg");
+	background-size: cover;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-top-right-radius: 6px;	
+	-moz-border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+	-webkit-box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.24) inset;
+	-moz-box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.24) inset;
+	box-shadow: 1px 1px 8px 3px rgba(0, 0, 0, 0.24) inset;
+}
+#map svg {
+	display: none;	
+	-webkit-animation: map-in 1s linear 0 1;
+	-webkit-border-top-right-radius: 6px;
+	-webkit-border-bottom-right-radius: 6px;
+	-moz-border-top-right-radius: 6px;	
+	-moz-border-bottom-right-radius: 6px;
+	border-top-right-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+#map path,
+#map circle {
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+/* = 字体渲染 Fonts
+----------------------------------------------- */
+/*
+@font-face {
+	font-family: Minion;
+	src: url(/fonts/MinionPro-Semibold.otf);
+}
+*/
+
+/* = IE 8 以下 IE 8 or below
+----------------------------------------------- */
+
+.ie-alert {
+	position: fixed;
+	top: 50px;
+	width: 630px;
+	z-index: 9999;	
+}
+#ie8 .panel-description {
+	background: #FFF url("http://bcs.duapp.com/databank/images%2Fpatterns%2Fwhite_wall_hash.jpg");	
+}
+#ie8 .hover {
+	color: #000;
+}
+#ie8 .fadeout {
+	color: #CCC;
+}
+
+/* = 响应式 Responsive
+----------------------------------------------- */
+
+@media (min-width: 1200px) {
+	.padding-huge {
+		padding: 65px;
+	}
+	.hero-unit {
+		background-position-y: 55%;
+	}
+	.panel {
+		margin-bottom: 140px;
+	}
+	.panel-description {
+		margin-bottom: 100px;
+	}
+	.description {	
+		margin-top: -245px;
+	}
+	.screenshots {
+		position: absolute;
+		margin-top: -63px;
+		margin-left: -50px;
+		width: 475px;
+	}
+	.screenshot-img {
+		max-width: 475px;
+	}
+	.iphone-mockup {
+		margin-top: 0;
+	}
+	.design {
+		padding: 0 0 25px 45px;
+	}
+	.programming {
+		padding: 0 35px 25px 0;
+	}
+	.ipad-news { 
+		max-width: 585px;
+	}
+	.ribbon-apple {
+		max-width: 80px;	
+	}
+	.sns-container {
+		float: left;
+	}
+	.sns-icon img {
+		-webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, color-stop(10%,rgba(255, 255, 255, 0.0)), color-stop(80%,rgba(255, 255, 255, 0.10)), color-stop(100%,rgba(255, 255, 255, .3)));
+	}
+
+}
+ 
+@media (min-width: 768px) and (max-width: 979px) {
+	h1 {
+		font-size: 28.5px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 1.8;
+	}
+	.block-left {
+		padding: 15px 5px 10px 35px;
+	}
+	.padding-large {
+		padding: 20px;
+	}
+	.ipad-news {
+		max-width: 500px;
+		margin-left: -140px;
+	}
+	.muiti-contact {
+		font-size: 45px;
+		line-height: 1.8;
+	}
+}
+
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0;
+	}	
+	.navbar .btn-navbar {
+		position: absolute;
+		right: 10px;	
+	}
+	.collapse.in {
+		margin-top: 45px;
+	}
+	header {
+		margin-top: 0;
+	}
+	.description {
+		margin-top: -265px;
+	}
+	.panel {
+		margin-bottom: 60px;
+		overflow: hidden;
+	}
+	.panel-description {
+		margin-bottom: 60px;
+	}
+	.panel-description h4 {
+		font-size: 17px;
+		line-height: 1.8;
+	}
+	#map {
+		height: 400px;
+	}
+	.button {
+		margin: 5px auto;
+	}
+	.screenshots {
+		margin-top: 48px;
+		margin-left: -20px;
+	}
+	.iphone-mockup  {
+		height: 500px;
+		max-width: 400px;
+		margin-top: 0;
+	}
+	.ribbon-apple {
+		max-width: 65px;
+	}
+	.ribbon-version {
+		max-width: 120px;
+	}
+}
+
+@media (max-device-width: 1024px) {
+	.sns-icon {
+		-webkit-filter: none;
+	}
+	.sns-icon:hover {
+		-webkit-filter: none;
+	}	
+	.sns-fadeout {
+		-webkit-filter: none;
+		opacity: 0.3;
+	}
+	a.thumbnail img {
+		-webkit-filter: none;
+	}
+	#photograph .carousel-inner:hover {
+		-webkit-filter: grayscale(0.8);
+		-webkit-transform: translateZ(0);
+	}
+}
+
+@media (max-width: 767px) {
+	body {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	h1 {
+		font-size: 32.5px;
+	}
+	.navbar-fixed-top,
+	.navbar-fixed-bottom,
+	.navbar-static-top {
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.hero-unit img {
+		max-width: 100%;
+	}
+	.description {
+		margin-top: -267px;
+	}
+	.block-left {
+		padding: 40px;
+	}
+	article.container {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	#map,
+	#map svg {
+		-webkit-border-bottom-left-radius: 6px;
+		-webkit-border-top-right-radius: 0;
+		-moz-border-bottom-left-radius: 6px;	
+		-moz-border-top-right-radius: 0;
+		border-bottom-left-radius: 6px;
+		border-top-right-radius: 0;
+	}
+	#photograph .carousel-inner, 
+	#photograph .carousel-inner > .item > img, 
+	#photograph .carousel-inner > .item > a > img {
+		-webkit-border-top-right-radius: 6px;
+		-webkit-border-bottom-left-radius: 0;
+		-moz-border-top-right-radius: 6px;
+		-moz-border-bottom-left-radius: 0;
+		border-top-right-radius: 6px;
+		border-bottom-left-radius: 0;
+	}
+	.button {
+		margin: 10px auto;
+	}
+	.screenshots {
+		position: relative;
+		margin: 20px auto 0;
+		max-width: 500px;
+	}
+	.design, 
+	.programming {
+		padding: 0 45px 0 45px;
+	}
+	.muiti-contact {
+		font-size: 40px;
+		line-height: 1.8;
+	}
+	.thumbnail {
+		border: none;
+	}
+	.ipad-news {
+		display: none;
+	}
+}
+
+@media (max-width: 620px) {
+	.muiti-contact {
+		font-size: 30px;
+		line-height: 1;
+	}
+	.sns-container {
+		max-width: 270px;
+	}	
+	.sns-icon {
+		margin: 0 10px 30px;
+		width: 45px;
+		
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;		
+	}
+	.sns-icon:before {
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+	
+	.sns-icon:hover:before {
+		background: -moz-linear-gradient(top, rgba(255,255,255,0.3) 0%, rgba(255,255,255,.1) 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,.1)));
+		background: linear-gradient(top, rgba(255,255,255,0.3) 0%,rgba(255,255,255,.1) 100%);
+	}
+	.sns-icon:after {
+		-webkit-border-top-left-radius: 8px;
+		-webkit-border-top-right-radius: 8px;
+		-moz-border-radius-topleft: 8px;
+		-moz-border-radius-topright: 8px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+	}
+}
+
+@media (max-width: 480px) {
+	.padding-large {
+		padding: 25px;
+	}
+	.hero-unit {
+		background: url("http://bcs.duapp.com/databank/images/cover-5-mobile.jpg");
+	}
+	.panel {
+		margin-bottom: 35px;
+	}
+	.panel-description {
+		margin-bottom: 35px;
+	}
+	.panel-description h4 {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+	.panel-description h5 {
+		color: rgba(0, 0, 0, 0.7);
+		font-size: 13.5px;
+		line-height: 1.5;
+		text-align: left;
+		margin-top: 20px;
+	}
+	.muiti-contact {
+		font-size: 25px;
+		line-height: 1;
+	}
+	.img-responsive {
+		max-width: 100%;
+	}
+
+}
+@media (max-width: 320px){
+	.padding-middle {
+		padding: 15px;
+	}
+	.block-left {
+		padding: 25px;
+	}
+	.hero-unit {
+		padding: 40px 0 60px;
+	}
+	.hero-unit img {
+		max-width: 280px;
+	}
+	hr.soften {
+		margin: 20px 0;
+	}
+	.description {
+		margin-top: -288px;
+	}	
+	article.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.panel, 
+	#map,
+	#map svg, 
+	#photograph .carousel-inner, 
+	#photograph .carousel-inner > .item > img, 
+	#photograph .carousel-inner > .item > a > img {
+		-webkit-border-radius: 0;
+		-moz-border-radius: 0;
+		border-radius: 0;
+	}
+	#map {
+		height: 230px;
+	}
+	.carousel-indicators {
+		display: none;
+	}
+	.design, 
+	.programming {
+		padding: 0 25px 0 25px;
+	}
+	.screenshots {
+		margin: 20px auto 0;
+	}
+	.muiti-contact {
+		font-size: 20px;
+		line-height: 1;
+	}	
+}
+
+@media (max-width: 290px){
+	.hero-unit img {
+		max-width: 100%;
+	}
+}
+
+@media -webkit-min-device-pixel-ratio: 2) { 
+
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2), 
+only screen and (   min--moz-device-pixel-ratio: 2), 
+only screen and (     -o-min-device-pixel-ratio: 2/1), 
+only screen and (        min-device-pixel-ratio: 2), 
+only screen and (                min-resolution: 192dpi), 
+only screen and (                min-resolution: 2dppx) { 
+	body {
+		background: #e5e5e5 url("http://bcs.duapp.com/databank/images%2Fpatterns%2Fmooning%402x.jpg");
+		background-size: 400px 400px;
+	}
+	.panel {
+		background: #FFF url("http://bcs.duapp.com/databank/images%2Fpatterns%2Fwhite_wall_hash%402x.jpg");
+		background-size: 500px 500px;
+	}
+}
+
+/* = 动画 Animations
+----------------------------------------------- */
+
+@-webkit-keyframes title-in {
+	0% {
+		-webkit-transform: translateY(-50px);
+	}
+	80% { 
+		-webkit-transform: translateY(-5px);
+	}
+	90% { 
+		-webkit-transform: translateY(5px);
+	}
+	100% { 
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes description-in {
+	0% {
+		-webkit-transform: translateY(90px);
+	}
+	80% { 
+		-webkit-transform: translateY(5px);
+	}
+	90% { 
+		-webkit-transform: translateY(-5px);
+	}
+	100% { 
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes profile-img-hover {
+	0% {
+		-webkit-transform: rotate(0);
+	}
+	23% { 
+		-webkit-transform: rotate(18deg);
+	}
+	25% { 
+		-webkit-transform: rotate(20deg);
+	}
+	50% { 
+		-webkit-transform: rotate(0);
+	}
+	73% { 
+		-webkit-transform: rotate(-18deg);
+	}
+	75% { 
+		-webkit-transform: rotate(-20deg);
+	}
+	100% { 
+		-webkit-transform: rotate(0);
+	}
+}
+
+@-webkit-keyframes profile-img-active {
+	0% {
+		-webkit-transform: rotate(0);
+	}
+	100% { 
+		-webkit-transform: rotate(365deg);
+	}
+}
+
+@-webkit-keyframes profile-img-loading {
+	0% {
+		-webkit-filter: blur(5px);
+	}
+	100% { 
+		-webkit-filter: blur(1px);
+	}
+}
+
+@-webkit-keyframes spinner-in {
+	0% {
+		-webkit-filter: blur(5px);
+		-webkit-transform: translateY(60px);
+	}
+	100% { 
+		-webkit-filter: none;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes panel-in {
+	0% {
+		-webkit-filter: grayscale(0.8) blur(5px);
+		-webkit-transform: translateY(80px);
+	}
+	50% {
+		-webkit-filter: grayscale(0.3) blur(3px);
+		-webkit-transform: translateY(60px);
+	}
+	100% { 
+		-webkit-filter: none;
+		-webkit-transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes map-in {
+	0% {
+		-webkit-filter: grayscale(0.8) blur(5px);
+	}
+	50% {
+		-webkit-filter: grayscale(0.3) blur(3px);
+	}
+	100% { 
+		-webkit-filter: none;
+	}
+}
+
+@-webkit-keyframes map-in {
+	0% {
+		-webkit-filter: grayscale(0.8) blur(5px);
+	}
+	100% { 
+		-webkit-filter: none;
+	}
+}
+
+@-webkit-keyframes sns-icon-hover {
+	0% {
+		-webkit-transform: scale(1.1) rotate(3deg) translateX(-2px);
+	}
+	100% { 
+		-webkit-transform: scale(1.1) rotate(-3deg) translateX(2px);
+	}
+}
+
+/* = 伪类 Pseudo
+----------------------------------------------- */
+::-webkit-selection {
+    background: #d3d3d3; 
+    color: #555;
+}
+::-moz-selection {
+    background: #d3d3d3; 
+    color: #555;
+}
+::selection {
+    background: #d3d3d3; 
+    color: #555;
+}
+</style>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" onload="completed();" ontouchstart="">
+
+<div id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+
+      <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+	<div class="nav-collapse collapse">
+        <ul class="nav">
+            <li class="active"><a href="#banner">简述</a></li>
+            <li><a href="#travel">旅行</a></li>
+			<li><a href="#writing">写作</a></li>
+			<li><a href="#music">音乐</a></li>
+            <li><a href="#photography">摄影</a></li>
+            <li><a href="#creativity">创造</a></li>
+            <li><a href="#apple">苹果</a></li>
+            <li><a href="#contact">联系</a></li>
+			<li><a href="#about">关于我</a></li>
+            <li><a href="#website">网站</a></li>
+        </ul>
+	</div>
+    
+    <ul class="nav">
+        <li><a href="./blog/index.php" target="_blank">博客</a></li>
+        <li><a href="./android/android.html" target="_blank">Android</a></li>
+		<li><a href="./iOS/ios.html" target="_blank">iOS</a></li>
+        <li><a href="http://weibo.com/uniqueshine" target="_blank">微博</a></li>
+    </ul>
+    
+    </div>
+  </div>
+</div>
+
+<!--[if lt IE 9]>
+    <div class="alert alert-block ie-alert">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <h4>浏览器版本过低</h4>
+        <br />
+        <p>你知道不？你还在用十年前的浏览器！这个网页上的有很多好看的东西和动画效果都显示不了！</p>
+        <p>建议赶快<a href="http://windows.microsoft.com/zh-cn/internet-explorer/downloads/ie-10/worldwide-languages" target="_blank">升级</a>你的浏览器版本或使用 <a href="http://www.google.com/intl/zh-CN/chrome/browser/" target="_blank">Chrome</a> 或 <a href="http://www.apple.com.cn/safari/" target="_blank">Safari</a> 等高级浏览器。</p>
+    </div>
+<![endif]-->
+
+<header id="banner" class="hero-unit no-radius">
+	<div class="container text-center">
+		<!--
+        <h1>
+        <img src="" alt="Long Luo">Long Luo
+    	</h1>
+    	-->
+        <!-- <p>网站正在建设中</p> -->
+    </div>
+    <span class="banner-link hidden-phone"><a href="http://www.imlongluo.com" target="_blank"> View </a></span>
+</header>
+
+<div class="shadow"></div>
+
+<article class="container"> 
+
+	<!--  简述 Description  -->
+    <section id="description" class="row description">
+        <div class="span10 offset1 panel-description button-text-panel text-center">
+        	<div class="padding-middle">
+               <img class="profile img-circle loading" src="http://bcs.duapp.com/databank/images/LOGO/cat4.jpg">
+               <h2>I'M Long Luo. A Programmer.</h2>
+               <h3>未觉池塘春草梦 阶前梧叶已秋声</h3>
+               <h4>故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。---《孟子》</h4>
+               <hr class="soften">
+               <p><span class="hidden-phone">这是我的个人网站，想</span><a href="./aboutme/index.html" target="_blank">了解我</a>, 欢迎访问<a href="./blog/index.php" target="_blank">我的博客</a>和App作品：<a href="./android/android.html" target="_blank">Android App</a>&<a href="./iOS/ios.html" target="_blank">iOS App</a></p>
+               <!--  
+               <p><span class="label label-warning">注意</span> 网站正在更新中，缓存功能已关闭，且页面会出现某些异常，建议稍后再访问
+               </p>  
+               -->
+            </div>
+        </div>
+    </section>
+    
+    <div id="loading" class="text-center">
+    	<img class="spinner" src="http://bcs.duapp.com/databank/images%2Fspinner.gif">
+    	<span>加载中</span>
+    </div>
+    
+    <!--  旅行 Travel  -->
+
+    <section id="travel" class="row">
+        <div class="span12 panel">
+        	<div class="row">
+            	<div class="span6">
+                	<div class="block-left">
+                        <h1>旅行</h1>
+                        <p class="wo">What is a journey? A journey is not a trip. It's not a vacation. It's a process. A Discovery. It's a process of self-discovery. </p>
+                        <br />
+                        <p class="wo">A journey brings us face to face with ourselves. A journey shows us not only the world, but how we fit in it. Does the person create the journey or does the journey create the person? The journey is life itself. Where will life take you? </p>
+                        <br />
+                        <p class="wo">如果不去接触未知，我们的感觉将变得迟钝，我们的世界就那么小小的一点儿，就连好奇心也将消失不见。我们的目光将不再放眼远方的地平线，耳朵也听不到那些熟悉的声音。</p>
+                        <br />
+
+                        <a href="#aboutMaps" data-toggle="modal">About Map</a> <span class="muted" style="margin: 10px; cursor: default;"> | </span> <a href="china.html" target="_blank">Life is a long journey. »</a>
+                        
+                        <!-- Modal -->
+                        <div id="aboutMaps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h3 id="myModalLabel">关于地图数据</h3>
+                            </div>
+                            
+                            <div class="modal-body">
+                            <p>地图数据来自 <a href="http://www.naturalearthdata.com/" target="_blank">Natural Earth</a></p>
+                            
+                            <hr class="soften">
+                            
+                            <h4>关于坐标点数据</h4>
+                            <p>地图中以红点标示的为曾到达过的地方，其中：</p>
+                            <ul>
+                                <li><p>若新到达的城市旁已有相邻的曾到达城市，且经度和（或）纬度相差小于 1° 的，仅标示最先到达的城市；</p></li>
+                                <li><p>所有坐标信息，均来源于在Google地图查询中到的该城市坐标，</p></li>
+                                <li><p>坐标点和其中所标出的到达年份为非完整数据；</p></li> 
+                                <li><p>最后更新时间：2013年11月25日</p></li>
+							</ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">关闭</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="span6">
+					<div id="map"></div>
+        		</div>
+			</div>
+        </div>
+    </section>
+
+	<!--   Remove this module.  -->
+    <!--  写作 Writing  -->
+    <!--
+    <section id="writing" class="row">
+   		<div class="span12 panel">
+        	<div class="row">
+                <div class="span8">
+
+                <div class="span4">
+                	<div class="padding-large">
+                        <h1>写作</h1>
+                        <p class="wo">我喜欢写作</p>
+                        <a href="./blog/index.php" target="_blank" class="btn btn-info btn-large button">我的一些随笔</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </section>
+	-->
+
+	<!--   Remove this module.  -->
+    <!--  音乐 Music  -->
+    <!--
+    <section id="music" class="row">
+   		<div class="span12 panel">
+        	<div class="row">
+                <div class="span4">
+                	<div class="padding-large">
+                        <h1>音乐</h1>
+                        <p class="wo">我喜欢音乐</p>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </section>
+	-->
+
+	<!--   Remove this module.   -->
+    <!--  摄影 Photography  -->
+    <!--
+    <section id="photography" class="row">
+   		<div class="span12 panel">
+        	<div class="row">
+                <div class="span8">
+				
+                    <div id="photograph" class="carousel slide">
+                        <ol class="carousel-indicators">
+                            <li data-target="#photograph" data-slide-to="0" class="active"> </li>
+                            <li data-target="#photograph" data-slide-to="1"></li>
+                            <li data-target="#photograph" data-slide-to="2"></li>
+                            <li data-target="#photograph" data-slide-to="3"></li>
+                            <li data-target="#photograph" data-slide-to="4"></li>
+                            <li data-target="#photograph" data-slide-to="5"></li>
+                            <li data-target="#photograph" data-slide-to="6"></li>
+                            <li data-target="#photograph" data-slide-to="7"></li>
+                            <li data-target="#photograph" data-slide-to="8"></li>
+                            <li data-target="#photograph" data-slide-to="9"></li>
+                        </ol>
+                        
+						// Carousel items 
+                        <div class="carousel-inner">
+                            <div class="active item"><a href="http://www.camarts.cn/archives/549.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://databank.qiniudn.com/images/carousel/carousel-01.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/523.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-02.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/594.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-03.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/532.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-04.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/439.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-05.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/542.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-06.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/638.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-07.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/632.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-08.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/647.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-09.jpg"></a></div>
+                            <div class="item"><a href="http://www.camarts.cn/archives/1453.html" title="在 Camarts™ 中浏览" target="_blank"><img src="http://dandyweng.qiniudn.com/images/carousel/carousel-10.jpg"></a></div>
+                            
+                        </div>
+                        
+                        <a class="carousel-control left" href="#photograph" data-slide="prev">&lsaquo;</a>
+                        <a class="carousel-control right" href="#photograph" data-slide="next">&rsaquo;</a>
+                    </div>
+                </div>
+                
+                <div class="span4">
+                	<div class="padding-large">
+                        <h1>摄影</h1>
+                        <p class="wo">我爱摄影，尤其是壮美的自然风光。</p>
+                        
+                        <a href="http://www.imlongluo.com" target="_blank" class="btn btn-info btn-large button">浏览我的摄影作品</a>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </section>
+	-->
+    
+    <!--  创造 Creativity  -->
+
+    <section id="creativity" class="row">
+        <div class="span12 panel">
+            <div class="row">
+                <div class="span8">
+                    <!-- Content -->
+                    <div class="row">
+                    	<!--  创造 Creativity  -->
+                        <div class="span8">
+                        	<div class="block-left">
+                                <h1>创造</h1>
+                                <p class="wo">我热爱一切美好的新事物，喜欢旅行、音乐、运动和编程。</p>	
+                            </div>	
+                        </div>
+                        
+                        <!--  设计 Design  -->
+                        <div class="span4">
+                        	<div class="design">
+                                <h3>设计</h3>
+                                <p class="wo">目前，发现网页设计是编程和设计的一个很好的结合点，所以我现在非常喜欢制作网站。</p> 
+                            </div>
+                        </div>
+                        
+                        <!--  编程 Programming  -->
+                        <div class="span4">
+                        	<div class="programming">
+                                <h3>编程</h3>
+                                <p class="wo">Now I am a programmer.</p>
+                            </div>
+                        </div>
+                    </div
+                ></div>
+                <div class="span4 relative">
+                    <!-- Carousel -->
+                    <div id="showcase" class="carousel slide screenshots">
+                        <div class="carousel-inner">
+                            <div class="active item">
+                            <img src="" class="screenshot-img">
+                            </div>
+                            <div class="item">
+                            <!--
+                            <img src="" class="iphone-mockup">
+                            -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!--  苹果 Apple  --> 
+	
+    <section id="apple" class="row">
+   		<div class="span12 panel relative">
+        	<img class="ribbon-apple" src="http://bcs.duapp.com/databank/images/ribbon-apple.png">
+        	<div class="row">
+                <div class="span6">
+                	<img class="ipad-news" src="http://bcs.duapp.com/databank/images/mockedup-news.png">
+                </div>
+                
+                <div class="span6">
+                    <div class="padding-huge">
+                        <h1>Apple</h1>
+                        <p class="wo">我对 Apple 产品的热爱近乎狂热，是一名铁杆果粉。</p>
+                        <br>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </section>
+
+    
+    <!--  关于我 About  --> 
+	
+    <section id="about" class="row">
+   		<div class="span12 panel relative">
+        	<img class="ribbon-apple" src="http://bcs.duapp.com/databank/images/ribbon-apple.png">
+        	<div class="row">
+                <div class="span6">
+                	<img class="ipad-news" src="http://bcs.duapp.com/databank/images/mockedup-news.png">
+                </div>
+                
+                <div class="span6">
+                    <div class="padding-huge">
+                        <h1>关于我</h1>
+                        <a href="./aboutme/index.html" target="_blank" class="btn btn-info btn-large button">点击了解我更多</a>
+                        <br>
+                    </div>
+                </div>
+			</div>
+		</div>
+    </section>
+	
+
+    <!--  联系 Contact  -->
+    
+    <section id="contact" class="row">
+    	<div class="span12 panel">
+        	<div class="row">
+                <div class="span12">
+                	<div class="padding-large">
+                    	<h1>联系</h1>
+                        <div class="muiti-contact">
+                            <span class="email">
+								<email data-toggle="tooltip" title="Email">Long Luo</email><at>@</at><sns data-toggle="tooltip" title="社交网络">imlongluo</sns><web data-toggle="tooltip" title="个人网站">.com</web>
+								</span>
+                            <!--[if lt IE 9]>
+                            <p class="text-warning">当前浏览器不支持该模块的交互效果，无法动态展示联系方式，建议换用更高级的浏览器。</p>
+                            <p class="text-info">Twitter, Instagram, Path, 新浪微博、腾讯微博和微信的名称为 @dandyweng</p>
+                            <![endif]-->
+                        </div>
+                    </div>
+            	</div>
+                
+                <div class="span12">
+                	<div class="padding-large">
+                    	<div class="sns">
+                            <div class="sns-container">
+                                <a href="http://www.facebook.com/" target="_blank"><div id="icon-facebook" class="sns-icon" data-toggle="tooltip" title="Facebook"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Ffacebook.png"></div></a>
+                                <a href="http://twitter.com/" target="_blank"><div id="icon-twitter" class="sns-icon" data-toggle="tooltip" title="Twitter"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Ftwitter.png"></div></a>
+                                <a href="http://instagram.com/" target="_blank"><div id="icon-instagram" class="sns-icon" data-toggle="tooltip" title="Instagram"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Finstagram.png"></div></a>
+                                <a href="javascript:;" target="_blank"><div id="icon-path" class="sns-icon" data-toggle="tooltip" title="Path"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Fpath.png"></div></a>
+                            </div>
+                            <div class="sns-container">              
+                                <a href="http://weibo.com/uniqueshine" target="_blank"><div id="icon-sinaweibo" class="sns-icon" data-toggle="tooltip" title="新浪微博"><img src="http://bcs.duapp.com/databank/images%2Fsns%2FSinaWeibo.png"></div></a>
+                                <a href="http://t.qq.com/" target="_blank"><div id="icon-tencentweibo" class="sns-icon" data-toggle="tooltip" title="腾讯微博"><img src="http://bcs.duapp.com/databank/images%2Fsns%2FTencentWeibo.png"></div></a>
+                                <a href="http://www.imlongluo.com/" target="_blank"><div id="icon-wechat" class="sns-icon" data-toggle="tooltip" title="微信"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Fwechat.png"></div></a>
+                                <a href="http://www.imlongluo.com/" target="_blank"><div id="icon-qq" class="sns-icon" data-toggle="tooltip" title="QQ 暂时保密"><img src="http://bcs.duapp.com/databank/images%2Fsns%2Fqq.png"></div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </section>
+    
+     <!--  网站 website  -->
+
+    <section id="website" class="row">
+    	<div class="span12 panel text-center relative">
+       	 	<img class="ribbon-version" src="http://bcs.duapp.com/databank/images/ribbon-2013.png" alt="2013 版">
+			<div class="padding-large">
+                <h1>网站</h1>
+                <hr class="soften"> 
+                <p>这是这个网站的5.0版本，借鉴了互联网很多资源，在此感谢他们。</p>
+                <p>今年已经是第四个版本，采用栅格化<a href="http://www.responsinator.com/?url=www.imlongluo.com" target="_blank" title="看看这个网站在不同分辨率下的表现">响应式</a>布局，应用了多种实验性 CSS 元素和大量动画效果，</p>
+                <p>并支持 Retina 高清屏幕和 iOS Web App，还有基于 HTML 5 的离线缓存和 Canvas 绘图等技术。</p>
+                <p><a href="http://www.imlongluo.com/blog/index.php" target="_blank" title="我的个人网站是怎么做出来的">详情 »</a></p>
+                <a href="http://www.responsinator.com/?url=www.imlongluo.com" target="_blank" title="看看这个网站在不同分辨率下的表现" alt="响应式布局">
+                <!--
+                <img class="img-responsive" src="http://databank.qiniudn.com/images/responsive.png" alt="响应式设计"></a>
+             -->
+                <p>因开发调试时间有限，无法保证各浏览器的兼容性，建议使用最新版本的 Chrome 或 Mac 版 Safari 浏览。</p>
+                <!--
+                <p>之前的三个版本已经在下方列出，有兴趣的可以看看我在这方面的成长之路。</p>
+                -->
+			</div>
+            
+                <div class="span12">
+                	<div class="padding-large" style="padding-top: 0;">
+                        <hr class="soften">
+                        <p>Designed and Developed By Long Luo.</p>
+                        <p>Copyright &copy; 2005 - 2013 Long Luo. All Rights Reserved.</p> 
+                        <div id="back-to-top">
+                            <svg id="rocket" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewbox="0 0 64 64">
+                                <path fill="#CCCCCC" d="M42.057,37.732c0,0,4.139-25.58-9.78-36.207c-0.307-0.233-0.573-0.322-0.802-0.329
+                                c-0.227,0.002-0.493,0.083-0.796,0.311c-13.676,10.31-8.95,35.992-8.95,35.992c-10.18,8-7.703,9.151-1.894,23.262
+                                c1.108,2.693,3.048,2.06,3.926,0.115c0.877-1.943,2.815-6.232,2.815-6.232l11.029,0.128c0,0,2.035,4.334,2.959,6.298
+                                c0.922,1.965,2.877,2.644,3.924-0.024C49.974,47.064,52.423,45.969,42.057,37.732z M31.726,23.155
+                                c-2.546-0.03-4.633-2.118-4.664-4.665c-0.029-2.547,2.012-4.587,4.559-4.558c2.546,0.029,4.634,2.117,4.663,4.664
+                                C36.314,21.143,34.272,23.184,31.726,23.155z"/>
+                            </svg>
+                        </div>
+                    </div>              
+                </div>
+       		</div>
+        </div>
+    </section>
+   
+</article>
+
+<script type="text/javascript" src="./bootstrap/scripts.min.js"></script>
+<script type="text/javascript" src="./map/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="./map/js/jquery-jvectormap-cn-merc-cn.js"></script>
+<script type="text/javascript" src="./js/home.min.js"></script>
+
+<!-- Baidu Statistics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb4c6c0df76415ca14358f56e0f957de1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- CNZZ Statistics -->
+<script src="http://s22.cnzz.com/z_stat.php?id=1000135599&web_id=1000135599" language="JavaScript"></script>
+
+</body>
+</html>
