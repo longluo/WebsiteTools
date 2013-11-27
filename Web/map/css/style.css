@@ -1,14 +1,14 @@
 @charset "utf-8";
-/* = 地图效果 Map Effects 
-/* = Designed and Developed by Dandy Weng 
------------------------------------------------ */
+/*    地图效果 Map Effects   */
+/* Designed and Developed by Long Luo  */ 
+/*  -----------------------------------------------  */
 html, body {
 	height: 100%;
 }
 #map {
 	height: 800px;
 	width: 100%;
-	background: url("http://static.dandyweng.com/map/images/small_map_bg.jpg");
+	background: url("http://databank.u.qiniudn.com/map/images/map_bg_fit.jpg");
 	background-size: cover;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
