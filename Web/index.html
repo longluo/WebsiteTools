@@ -9,7 +9,7 @@
 
 ==================================================================================
 	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
-	Version: 5.30.
+	Version: 6.02.
 	
 -->
 
@@ -36,13 +36,16 @@
 <!--<![endif]-->
 <head>
 <meta charset="UTF-8">
+<!-- For Baidu Verification -->
+<meta name="baidu-site-verification" content="e2nGZwl2Rh" />
+
 <meta name="Description" content="罗龙（Long Luo）的个人网站。A Programmer." />
-<meta name="keywords" content="罗龙, Long Luo" />
-<meta name="Author" content="Long Luo" / >
+<meta name="keywords" content="罗龙, Long Luo, it, 个人网站, 互联网, 技术博客, 旅行, 编程" />
+<meta name="Author" content="Long Luo, 罗龙" / >
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
 <meta name="format-detection" content="telephone=no" />
-<link rel="shortcut icon" href="/images/favicon.ico" />
-<link rel="icon" href="/images/favicon.ico" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" href="images/favicon.ico" />
 
 <!-- iOS Web App -->
 <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -94,16 +97,16 @@
 
 	  
 <!-- Bootstrap  -->
-<link href="./bootstrap/global.min.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="./bootstrap/responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="bootstrap/global.min.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="bootstrap/responsive.min.css" rel="stylesheet" type="text/css" media="screen" />
 
 <!-- jVectormap -->
-<link href="./map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" media="screen" />
 <link href="http://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="./js/html5.js"></script> 
+<script type="text/javascript" src="js/html5.js"></script> 
 <![endif]-->
 
 <title>罗龙 | Long Luo</title>
@@ -116,7 +119,7 @@
 /* = 通用 Global                           */
 /*----------------------------------------------- */
 body {
-	background: #e5e5e5 url("./images/patterns/mooning.jpg");
+	background: #e5e5e5 url("images/patterns/mooning.jpg");
 	overflow-x: hidden;
 	-webkit-user-select: none;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -187,10 +190,10 @@ header {
 }
 .hero-unit {
 	position: relative;
-	background: url("./images/hawaii_ship.jpg");
+	background: url("images/hawaii_ship.jpg");
 	background-size: cover;
-	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/hawaii_ship.jpg', sizingMethod='scale');
-	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/hawaii_ship.jpg', sizingMethod='scale')";
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/hawaii_ship.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/hawaii_ship.jpg', sizingMethod='scale')";
 	color: #fff;
 	height: 480px;	
 	margin-bottom: 0;
@@ -498,7 +501,7 @@ web {
 	max-width: 350px;
 	-webkit-box-reflect: below -65px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));s
 }
-#website p:not(small) {
+#about p:not(small) {
 	-webkit-box-reflect: below -13px -webkit-gradient(linear, 0 0, 0 100%, from(transparent), color-stop(.4, transparent), to(rgba(3,3,3,.2)));
 }
 a.thumbnail {
@@ -589,7 +592,7 @@ a.thumbnail small {
 ----------------------------------------------- */
 .panel {
 	display: none;
-	background: #FFF url("./images/patterns/white_wall_hash.jpg");
+	background: #FFF url("images/patterns/white_wall_hash.jpg");
 	padding: 0px;
 	margin-bottom: 120px;
 	color: #333;
@@ -674,7 +677,7 @@ a.thumbnail small {
 ----------------------------------------------- */
 #map {
 	height: 360px;
-	background: url("./map/images/map_bg_fit.jpg");
+	background: url("map/images/map_bg_fit.jpg");
 	background-size: cover;
 	-webkit-border-top-right-radius: 6px;
 	-webkit-border-bottom-right-radius: 6px;
@@ -722,7 +725,7 @@ a.thumbnail small {
 	z-index: 9999;	
 }
 #ie8 .panel-description {
-	background: #FFF url("/images/patterns/white_wall_hash.jpg");	
+	background: #FFF url("images/patterns/white_wall_hash.jpg");	
 }
 #ie8 .hover {
 	color: #000;
@@ -990,7 +993,7 @@ a.thumbnail small {
 		padding: 25px;
 	}
 	.hero-unit {
-		background: url("/images/cover-5-mobile.jpg");
+		background: url("images/cover-5-mobile.jpg");
 	}
 	.panel {
 		margin-bottom: 35px;
@@ -1088,11 +1091,11 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi), 
 only screen and (                min-resolution: 2dppx) { 
 	body {
-		background: #e5e5e5 url("./images/patterns/mooning@2x.jpg");
+		background: #e5e5e5 url("images/patterns/mooning@2x.jpg");
 		background-size: 400px 400px;
 	}
 	.panel {
-		background: #FFF url("./images/patterns/white_wall_hash@2x.jpg");
+		background: #FFF url("images/patterns/white_wall_hash@2x.jpg");
 		background-size: 500px 500px;
 	}
 }
@@ -1232,7 +1235,7 @@ only screen and (                min-resolution: 2dppx) {
 ----------------------------------------------- */
 ::-webkit-scrollbar {
 	width: 10px;
-	background: #cacaca url("./images/patterns/mooning.jpg");;
+	background: #cacaca url("images/patterns/mooning.jpg");;
 	opacity: .8;	
 	-webkit-transition: .25s;
 }
@@ -1242,7 +1245,7 @@ only screen and (                min-resolution: 2dppx) {
 	-webkit-transition: .25s;
 }
 ::-webkit-scrollbar-track {
-	background: #cacaca url("./images/patterns/mooning.jpg");;
+	background: #cacaca url("images/patterns/mooning.jpg");;
 	/* border: thin solid lightgray; 
 	box-shadow: 0px 0px 3px #dfdfdf inset; */
 	border-radius: 10px;
@@ -1297,14 +1300,14 @@ only screen and (                min-resolution: 2dppx) {
 		            <li><a href="#apple">苹果</a></li>
 		            <li><a href="#contact">联系</a></li>
 					<li><a href="#about">关于我</a></li>
-		            <li><a href="#website">网站</a></li>
+		            <li><a href="#about">网站</a></li>
                 </ul>
             </div>
         
             <ul class="nav">
 		        <li><a href="./blog/index.php" target="_blank">博客</a></li>
-		        <li><a href="./android/android.html" target="_blank">Android</a></li>
-				<li><a href="./iOS/ios.html" target="_blank">iOS</a></li>
+		        <li><a href="./Android/index.html" target="_blank">Android</a></li>
+				<li><a href="./iOS/index.html" target="_blank">iOS</a></li>
 		        <li><a href="http://weibo.com/uniqueshine" target="_blank">微博</a></li>
             </ul>
         </div>
@@ -1347,7 +1350,7 @@ only screen and (                min-resolution: 2dppx) {
                <h3>未觉池塘春草梦 阶前梧叶已秋声</h3>
                <h4>故天将降大任于是人也，必先苦其心志，劳其筋骨，饿其体肤，空乏其身，行拂乱其所为，所以动心忍性，曾益其所不能。---《孟子》</h4>
                <hr class="soften">
-               <p><span class="hidden-phone">这是我的个人网站，想</span><a href="./aboutme/index.html" target="_blank">了解我</a>, 欢迎访问<a href="./blog/index.php" target="_blank">我的博客</a>和App作品：<a href="./android/android.html" target="_blank">Android App</a>&<a href="./iOS/ios.html" target="_blank">iOS App</a></p>
+               <p><span class="hidden-phone">这是我的个人网站，想</span><a href="./aboutme/index.html" target="_blank">了解我</a>, 欢迎访问<a href="./blog/index.php" target="_blank">我的博客</a>和App作品：<a href="./Android/index.html" target="_blank">Android App</a>&<a href="./iOS/index.html" target="_blank">iOS App</a></p>
                <!--  
                <p><span class="label label-warning">注意</span> 网站正在更新中，缓存功能已关闭，且页面会出现某些异常，建议稍后再访问
                </p>  
@@ -1357,8 +1360,8 @@ only screen and (                min-resolution: 2dppx) {
     </section>
     
     <div id="loading" class="text-center">
-        <img class="spinner" src="./images/spinner.gif" />
-        <span>加载中</span>
+        <img class="spinner" src="images/spinner.gif" />
+        <span>加载中...</span>
     </div>
     
     <!--  旅行 Travel  -->
@@ -1376,10 +1379,10 @@ only screen and (                min-resolution: 2dppx) {
                         <p class="wo">如果不去接触未知，我们的感觉将变得迟钝，我们的世界就那么小小的一点儿，就连好奇心也将消失不见。我们的目光将不再放眼远方的地平线，耳朵也听不到那些熟悉的声音。</p>
                         <br />
 
-                        <a href="#aboutMaps" data-toggle="modal">About Map</a> <span class="muted" style="margin: 10px; cursor: default;"> | </span> <a href="china.html" target="_blank">Life is a long journey. »</a>
+                        <a href="#about-maps" data-toggle="modal">About Map</a> <span class="muted" style="margin: 10px; cursor: default;"> | </span> <a href="china.html" target="_blank">Life is a long journey. »</a>
                         
                         <!-- Modal -->
-                        <div id="aboutMaps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div id="about-maps" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                 <h3 id="myModalLabel">关于地图数据</h3>
@@ -1517,7 +1520,9 @@ only screen and (                min-resolution: 2dppx) {
                         <div class="span8">
                             <div class="block-left">
                                 <h1>创造</h1>
-                                <p class="wo">我热爱一切美好的新事物，喜欢旅行、音乐、运动和编程。</p>	
+                                <p class="wo">好奇心极重，兴趣爱好极为广泛，不管是生物学，心理学还是物理化学；</p>
+                                <p class="wo">从大二开始学习绘画、音乐，到现在仍然一事无成；</p>
+                                <br />
                             </div>	
                         </div>
                         
@@ -1533,7 +1538,8 @@ only screen and (                min-resolution: 2dppx) {
                         <div class="span4">
                             <div class="programming">
                                 <h3>编程</h3>
-                                <p class="wo">Now I am a programmer.</p>
+                                <p class="wo">为Code而生，码Code为生计；码Code为乐趣，读Code以消忧；</p>
+                                <br />
                             </div>
                         </div>
                     </div>
@@ -1561,10 +1567,10 @@ only screen and (                min-resolution: 2dppx) {
     
     <section id="apple" class="row">
         <div class="span12 panel relative">
-        	<img class="ribbon-apple" src="/images/ribbon-apple.png">
+        	<img class="ribbon-apple" src="images/ribbon-apple.png">
             <div class="row">
                 <div class="span6">
-                	<img class="ipad-news" src="/images/mockedup-news.png">
+                	<img class="ipad-news" src="images/mockedup-news.png">
                 </div>
                 
                 <div class="span6">
@@ -1583,15 +1589,21 @@ only screen and (                min-resolution: 2dppx) {
 	
     <section id="about" class="row">
    		<div class="span12 panel relative">
+   			<!--
         	<img class="ribbon-apple" src="http://bcs.duapp.com/databank/images/ribbon-apple.png">
+        	-->
         	<div class="row">
                 <div class="span6">
-                	<img class="ipad-news" src="http://bcs.duapp.com/databank/images/mockedup-news.png">
+                	<img class="ipad-news" src="images/bluebubble.jpg">
                 </div>
                 
                 <div class="span6">
                     <div class="padding-huge">
                         <h1>关于我</h1>
+                        <p class="wo">世界之大，我却如此渺小，小时候没见过啥世面，长大后一直想去更多更远的地方；</p>
+                        <p class="wo">典型的不务正业者，常有奇思妙想；</p>
+                        <p class="wo">估计五年之内也成不了什么事，平庸之人而已；</p>
+                        <br />
                         <a href="./aboutme/index.html" target="_blank" class="btn btn-info btn-large button">点击了解我更多</a>
                         <br>
                     </div>
@@ -1645,7 +1657,7 @@ only screen and (                min-resolution: 2dppx) {
     
      <!--  网站 website  -->
 
-    <section id="website" class="row">
+    <section id="about" class="row">
     	<div class="span12 panel text-center relative">
        	 	<img class="ribbon-version" src="http://bcs.duapp.com/databank/images/ribbon-2013.png" alt="2013 版">
 			<div class="padding-large">
@@ -1682,16 +1694,16 @@ only screen and (                min-resolution: 2dppx) {
                         </div>
                     </div>              
                 </div>
-            </div>
+       		</div>
         </div>
     </section>
    
 </article>
 
-<script type="text/javascript" src="./bootstrap/scripts.min.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-cn-merc-cn.js"></script>
-<script type="text/javascript" src="./js/home.min.js"></script>
+<script type="text/javascript" src="bootstrap/scripts.min.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-cn-merc-cn.js"></script>
+<script type="text/javascript" src="js/home.min.js"></script>
 
 <!-- Baidu Statistics -->
 <script type="text/javascript">

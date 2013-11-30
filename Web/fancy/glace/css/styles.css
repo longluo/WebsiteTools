@@ -1,0 +1,293 @@
+html, body, #wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+body {
+  margin: 0;
+  background-color: #9c9c9f; }
+
+div, h1, h2, h3, button, section, span {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /* Webkit */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE 10  */
+  /* Currently not supported in Opera but will be soon */
+  -o-user-select: none;
+  user-select: none; }
+
+#bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background: url("../assets/green-bg.jpg");
+  -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */
+  -webkit-transition-delay: 1200ms;
+  -moz-transition-delay: 1200ms;
+  -ms-transition-delay: 1200ms;
+  -o-transition-delay: 1200ms;
+  transition-delay: 1200ms; }
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 800ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition: opacity 800ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition: opacity 800ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition: opacity 800ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition: opacity 800ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */ }
+  .fade div {
+    z-index: 10; }
+
+#bar {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 500px;
+  height: 100%;
+  margin-left: -250px;
+  -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+  /* custom */
+  -webkit-transition-delay: 1200ms;
+  -moz-transition-delay: 1200ms;
+  -ms-transition-delay: 1200ms;
+  -o-transition-delay: 1200ms;
+  transition-delay: 1200ms; }
+  #bar #header {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    opacity: 0;
+    margin-top: -5px;
+    margin-right: -4px;
+    -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -ms-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
+    transition-delay: 1200ms; }
+    #bar #header .icon {
+      display: inline-block;
+      width: 25px;
+      height: 25px; }
+      #bar #header .icon a {
+        opacity: 0.2;
+        -webkit-transition: opacity 200ms;
+        -moz-transition: opacity 200ms;
+        -o-transition: opacity 200ms;
+        -ms-transition: opacity 200ms;
+        transition: opacity 200ms; }
+      #bar #header .icon a:hover {
+        opacity: 1; }
+      #bar #header .icon img {
+        width: 25px;
+        height: 25px; }
+  #bar #logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -310px;
+    margin-left: -155px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -ms-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
+    transition-delay: 1200ms; }
+    #bar #logo img {
+      width: 301px;
+      height: auto; }
+  #bar #content {
+    position: absolute;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: 90px;
+    opacity: 0;
+    z-index: 99;
+    -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -ms-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
+    transition-delay: 1200ms; }
+  #bar #copy {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ffffff;
+    opacity: 0.4;
+    margin-top: 12px;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased !important; }
+  #bar #social {
+    height: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 38px;
+    z-index: 99;
+    text-align: center; }
+    #bar #social .icon-container {
+      width: 250px;
+      height: 50px;
+      margin: 0 auto; }
+  #bar .social-icon {
+    float: left;
+    z-index: 1;
+    margin: 0;
+    width: 50px;
+    height: 50px;
+    line-height: 50px !important;
+    vertical-align: middle;
+    text-align: center; }
+    #bar .social-icon a {
+      color: #ffffff;
+      text-decoration: none;
+      opacity: 0.2;
+      font-size: 17px;
+      display: inline-block;
+      -webkit-transition: opacity 200ms;
+      -moz-transition: opacity 200ms;
+      -o-transition: opacity 200ms;
+      -ms-transition: opacity 200ms;
+      transition: opacity 200ms; }
+    #bar .social-icon a:hover {
+      opacity: 1; }
+    #bar .social-icon span {
+      line-height: 50px !important; }
+  #bar #copyright {
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 11px;
+    color: #ffffff;
+    opacity: 0.2;
+    margin-top: 27px;
+    z-index: 1;
+    -webkit-font-smoothing: antialiased !important; }
+  #bar #start-btn {
+    visibility: hidden;
+    -webkit-font-smoothing: antialiased !important;
+    font-family: 'pratt_pro_displayregular', Helvetica, sans-serif;
+    font-size: 26px;
+    letter-spacing: 0.01em;
+    z-index: 99; }
+    #bar #start-btn a {
+      color: #ffffff;
+      font-weight: normal;
+      text-decoration: none; }
+    #bar #start-btn .arrow {
+      display: inline-block;
+      position: relative;
+      width: 18px;
+      height: 18px;
+      overflow: hidden;
+      margin-left: 9px;
+      margin-bottom: -1px; }
+      #bar #start-btn .arrow img {
+        position: absolute;
+        top: 0px;
+        left: 0px; }
+      #bar #start-btn .arrow .up {
+        display: none;
+        width: 18px;
+        height: 18px;
+        z-index: 1; }
+  #bar #bar-bg {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 500px;
+    height: 100%;
+    background: url("../assets/stripe-bg.png");
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition: opacity 1000ms cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -moz-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -ms-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    -o-transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    transition-timing-function: cubic-bezier(0.7, 0.005, 0.52, 1);
+    /* custom */
+    -webkit-transition-delay: 1200ms;
+    -moz-transition-delay: 1200ms;
+    -ms-transition-delay: 1200ms;
+    -o-transition-delay: 1200ms;
+    transition-delay: 1200ms; }

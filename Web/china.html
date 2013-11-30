@@ -1,4 +1,31 @@
-﻿<!DOCTYPE html>
+﻿<!--
+
+===================================================================================
+	 _____    _____       ___   _____        _   _   _____   _____    _____  
+	|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
+	| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
+	|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
+	| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
+	|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
+
+==================================================================================
+	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
+	
+-->
+
+<!--
+<script type="text/javascript">
+	var retina = 'retina='+ window.devicePixelRatio +';'+ retina;
+	var screenwidth = 'screenwidth='+ window.screen.width;
+	document.cookie = retina;
+	document.cookie = screenwidth;
+	if(window.devicePixelRatio > 1){
+		document.location.reload(true);
+	}
+</script>
+-->
+
+<!DOCTYPE html>
 <!--[if IE]>
 <html id="ie" lang="zh-CN">
 <![endif]-->
@@ -8,38 +35,38 @@
 <head>
 <meta charset="UTF-8">
 <title>旅行足迹 · Long Luo</title>
-<meta name="Description" content="罗龙的旅行足迹。" />
-<meta name="keywords" content="罗龙, Long Luo" />
-<meta name="Author" contect="Long Luo" / >
+<meta name="Description" content="罗龙的旅行足迹, 国内, 中国" />
+<meta name="keywords" content="罗龙, Long Luo, 旅行, 旅游, 足迹" />
+<meta name="Author" contect="Long Luo, 罗龙" / >
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
 <meta name="format-detection" content="telephone=no" />
 <meta name="apple-mobile-web-app-title" content="旅行足迹" />
 
-<link rel="apple-touch-icon-precomposed" href="./images/ios/icon.png" />
-<link rel="shortcut icon" href="./images/favicon.ico" />
-<link rel="icon" href="./images/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" href="images/ios/icon.png" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="icon" href="images/favicon.ico" />
 
-<link href="./bootstrap/global.min.css" rel="stylesheet" media="screen" />
-<link href="./bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
-<link href="./map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen" />
-<link href="./css/jquery.montage.css" rel="stylesheet" media="screen" />
+<link href="bootstrap/global.min.css" rel="stylesheet" media="screen" />
+<link href="bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
+<link href="map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen" />
+<link href="css/jquery.montage.css" rel="stylesheet" media="screen" />
 
-<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="./js/pjax.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-cn-merc-cn.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-cn-merc-en.js"></script>
-<script type="text/javascript" src="./map/js/jquery-jvectormap-world-mill-en.js"></script>
-<script type="text/javascript" src="./js/jquery.montage.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/pjax.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-cn-merc-cn.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-cn-merc-en.js"></script>
+<script type="text/javascript" src="map/js/jquery-jvectormap-world-mill-en.js"></script>
+<script type="text/javascript" src="js/jquery.montage.min.js"></script>
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="./js/html5.js"></script> 
+<script type="text/javascript" src="js/html5.js"></script> 
 <![endif]-->
 
 <style>
 @charset "utf-8";
 
-/* = Designed and Developed by Long Luo */
+/* = Designed and Developed By Long Luo */
 /* = Global CSS */
 /* ----------------------------------------------- */
 body {
@@ -202,7 +229,7 @@ h1, h2, h3, h4, h5, p, span {
 	top: 0;
 	margin: 0px auto;
 	/* 
-	background: rgba(0, 0, 0, 0.8) url("./images/patterns/mooning.jpg") repeat;	 
+	background: rgba(0, 0, 0, 0.8) url("images/patterns/mooning.jpg") repeat;	 
 	*/
 	-webkit-transition: all 1s ease-in-out;
 	   -moz-transition: all 1s ease-in-out;
@@ -320,7 +347,7 @@ h1, h2, h3, h4, h5, p, span {
 .main {
 	position: relative;
 	width: 100%;	
-	background: #999 url("./images/patterns/white_wall_hash.jpg") repeat;
+	background: #999 url("images/patterns/white_wall_hash.jpg") repeat;
 	border-top: #E6E6E6 solid 1px;
 	-webkit-box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25), 0px 5px 30px 3px rgba(0, 0, 0, 0.2) inset;
 	-moz-box-shadow:    0px 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25), 0px 5px 30px 3px rgba(0, 0, 0, 0.2) inset;
@@ -443,7 +470,7 @@ footer {
 #map {
 	height: 800px;
 	width: 100%;
-	background: url("./map/images/map_bg_fit.jpg");
+	background: url("map/images/map_bg_fit.jpg");
 	background-size: cover;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -1009,12 +1036,12 @@ footer {
     </div>
     <div id="header-shadow" class="shadow"></div>
     <div id="handle" class="hide">
-		<a href="javascript:;"><img id="handle-chevron" src="./images/chevron.png"></a>
+		<a href="javascript:;"><img id="handle-chevron" src="images/chevron.png"></a>
     </div>
 </header>
 
 <div id="loading" class="text-center">
-    <img class="spinner" src="./images/spinner.gif">
+    <img class="spinner" src="images/spinner.gif">
     <span>加载中</span>
 </div>
 
@@ -1086,10 +1113,10 @@ footer {
 
 <footer>
 <p>Designed and Developed By Long Luo.</p>
-<p>Copyright &copy; 2013 Long Luo. All Rights Reserved.</p>
+<p>Copyright &copy; 2005 - 2013 Long Luo. All Rights Reserved.</p>
 </footer>
 
-<script type="text/javascript" src="./bootstrap/scripts.min.js"></script>
+<script type="text/javascript" src="bootstrap/scripts.min.js"></script>
 <script type="text/javascript">
 
 var $container 	= $('#am-container'),
