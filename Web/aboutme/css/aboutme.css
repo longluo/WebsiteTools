@@ -1,16 +1,7 @@
+/*     */
 /*
 
-===================================================================================
-	 _____    _____       ___   _____        _   _   _____   _____    _____  
-	|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
-	| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
-	|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
-	| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
-	|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
 
-==================================================================================
-	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
-	
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -342,7 +333,7 @@ a:focus {
     transition-delay:         0.5s;
 }
 
-#work .footnote {
+#japan .footnote {
     font-size: 15px;
 }
 
@@ -380,7 +371,7 @@ a:focus {
     width: 900px;
     padding-bottom: 120px;
 
-    background-image: url();
+    background-image: url(http://www.gravatar.com/avatar/318643095c83b914cf80a7f99f247fe6?s=160);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
