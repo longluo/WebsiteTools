@@ -1,0 +1,8 @@
+location /blog { 
+if (-f $request_filename/index.php) { 
+rewrite (.*) $1/index.php; 
+} 
+if (!-f $request_filename){ 
+rewrite ^/blog/(.*)$ /wp/index.php; 
+} 
+}
