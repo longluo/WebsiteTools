@@ -315,11 +315,11 @@ a:focus {
     color: purple;
 }
 
-#japan {
+#single {
     width: 650px;
 }
 
-#japan b {
+#single b {
     display: inline-block;
     -webkit-transition: 0.5s;
     -moz-transition:    0.5s;
@@ -328,7 +328,7 @@ a:focus {
     transition:         0.5s;
 }
 
-#japan.present .trans {
+#single.present .trans {
     -webkit-transform: translateX(100px);
     -moz-transform:    translateX(100px);
     -ms-transform:     translateX(100px);
@@ -380,7 +380,7 @@ a:focus {
     width: 900px;
     padding-bottom: 120px;
 
-    background-image: url(http://databank.u.qiniudn.com/image/cat/cat_guibai.jpg);
+    background-image: url(http://databank.u.qiniudn.com/images/cat/cat_guibai.jpg?imageView/1/w/180/h/220/q/85);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
