@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Language" content="en-us"/>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii"/>
+<meta name="keywords" content="computer android graphics ios system longluo projects app"/>
+<meta name="description" content="LongLuo's personal site"/>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="http://bcs.duapp.com/databank/css/simple.css"/>
+<title>LongLuo | Android | FlashLight</title>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25742729-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+<body class = "pageBody">
+<center>
+<div class = "mainDiv">
+	<table class = "mainTable">
+		<tr>
+			<td class = "banner">
+			<table class = "naviBound">
+				<tr>
+					<td>
+					<table class = "navibar">
+							<tr>
+								<td><a href = "/">Home</a></td>
+								<td><a href = "/blog/index.php">Blog</a></td>
+								<td><a href = "/iOS">iOS</a></td>
+								<td><a href = "/android/android.html">Android</a></td>
+							</tr>
+					</table>
+					</td>
+				</tr>
+				<tr>
+					<td class = "naviFooter"></td>
+				</tr>
+			</table>
+			</td>
+		</tr>
+		<tr>
+			<td class = "mainBody"><!-- Content Start -->
+<p class = "subtitle">App - FlashLight</p>
+<p>
+An Android App. FlashLight.
+</p>
+
+<p>I'm still working on this project in my spare time. For now, I'm refactoring
+the system to support breath-first ray tracing, which is GPU friendly. Upcomming 
+objectives are caustics photon map, irradiance caching, geometry instancing and
+other BRDF shaders.</p>
+<p>You may download the source code at <a href = "http://yongsprojects.codeplex.com" target = "yongsprojects">http://yongsprojects.codeplex.com</a></p>
+<p>Following are some results with the configuration and render time annotated. </p>
+<center>
+<img src = "images/rtpro_sponza.jpg" alt = "Sponza"/>
+<p class = "imageAnnotation">Sponza. Original image in 1920*1080. 8x MSAA, 32 final gather rays per sample. 
+1M stored photons. Rendered in 9 minutes on a Core i7 870.<br>Scene modeled by Marko Dabrovic.</p>
+</center>
+<center>
+<img src = "images/rtpro_confroom.jpg" alt = "Conference Room"/>
+<p class = "imageAnnotation">Conference room. Original image in 1920*1080. 16x MSAA, 64 final gather rays per sample. 
+<br>40 point lights, 1M stored photons. Rendered in 20 minutes on a Core i7 870.</p>
+</center>
+<center>
+<img src = "images/rtpro_sponge.jpg" alt = "Menger Sponge"/>
+<p class = "imageAnnotation">4th order Menger Sponge. Original image in 800*600. 8x MSAA, 32 final gather rays per sample. 
+<br>1 directional light, 500K photons. Rendered in 20.2 seconds on a Core i7 870.</p>
+</center>
+<center>
+<img src = "images/rtpro_kddebug.jpg" alt = "Kd tree tracing debugging program"/>
+<p class = "imageAnnotation">A tool writen specifically to debug the kd-tree tracing process.
+The best way to debug a program is try to visualize the entire process.<br> This tool highlights the node traversed in each tracing step.
+</p>
+</center>
+<!-- Content End -->
+</td>
+		</tr>
+		<tr>
+			<td class = "footer">
+			<div class = "centeredDiv">
+				<table border="0" width="100%">
+					<tr>
+						<td>
+						<p style = "text-align:center">Yong's Personal Site</p>
+						<p style = "text-align:center">2013</p></td>
+					</tr>
+				</table>
+			</div>
+			</td>
+		</tr>
+	</table>
+</div>
+</center>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000135599'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000135599%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>

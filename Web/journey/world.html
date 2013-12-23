@@ -10,7 +10,8 @@
 
 ==================================================================================
 	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
-	
+	Version: 3.0
+	Modified by Long Luo @December 23th, 2013 at Shenzhen, China.
 -->
 
 <!--
@@ -35,31 +36,35 @@
 <head>
 <meta charset="UTF-8">
 <title>Journey · Frank Luo</title>
-<meta name="Description" content="Frank Luo 's Journey, 罗龙的旅行足迹" />
-<meta name="keywords" content="Long Luo, Frank Luo, 罗龙, 地图, 地理, 世界" />
-<meta name="Author" content="Long Luo, 罗龙" / >
+
+<meta name="Description" content="Frank Luo 's Journey, 罗龙, Long Luo, Frank Luo, 个人网站, 技术博客, 互联网, 移动互联网, IT, Internet, Mobile Internet, Android, iOS, App, 程序员, Programmer, Coder, 罗龙的旅行足迹, 国内, 中国, 世界" />
+<meta name="keywords" content="罗龙, Long Luo, IT, 个人网站, 技术博客, 互联网, 移动互联网, 技术博客, App, iOS, Android, 编程, 程序员, 旅行, Program, Computer, 地图, China, 中国, 世界, 旅行, 旅游, 足迹" />
+<meta name="Author" content="Long Luo, 罗龙, Frank Luo" / >
+
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
 <meta name="format-detection" content="telephone=no" />
 <meta name="apple-mobile-web-app-title" content="Journey" />
-<link rel="apple-touch-icon-precomposed" href="images/ios/icon.png" />
-<link rel="shortcut icon" href="images/favicon.ico" />
-<link rel="icon" href="images/favicon.ico" />
 
-<link href="bootstrap/global.min.css" rel="stylesheet" media="screen" />
-<link href="bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
-<link href="map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen" />
-<link href="css/jquery.montage.css" rel="stylesheet" media="screen" />
 
-<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-<script type="text/javascript" src="js/pjax.js"></script>
-<script type="text/javascript" src="map/js/jquery-jvectormap-1.2.2.min.js"></script>
-<script type="text/javascript" src="map/js/jquery-jvectormap-cn-merc-cn.js"></script>
-<script type="text/javascript" src="map/js/jquery-jvectormap-cn-merc-en.js"></script>
-<script type="text/javascript" src="map/js/jquery-jvectormap-world-mill-en.js"></script>
-<script type="text/javascript" src="js/jquery.montage.min.js"></script>
+<link rel="apple-touch-icon-precomposed" href="../images/ios/icon.png" />
+<link rel="shortcut icon" href="../images/favicon.ico" />
+<link rel="icon" href="../images/favicon.ico" />
+
+<link href="../bootstrap/global.min.css" rel="stylesheet" media="screen" />
+<link href="../bootstrap/responsive.min.css" rel="stylesheet" media="screen" />
+<link href="../map/css/jquery-jvectormap-1.2.2.css" rel="stylesheet" media="screen" />
+<link href="../css/jquery.montage.css" rel="stylesheet" media="screen" />
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/pjax.js"></script>
+<script type="text/javascript" src="../map/js/jquery-jvectormap-1.2.2.min.js"></script>
+<script type="text/javascript" src="../map/js/jquery-jvectormap-cn-merc-cn.js"></script>
+<script type="text/javascript" src="../map/js/jquery-jvectormap-cn-merc-en.js"></script>
+<script type="text/javascript" src="../map/js/jquery-jvectormap-world-mill-en.js"></script>
+<script type="text/javascript" src="../js/jquery.montage.min.js"></script>
 
 <!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script> 
+<script type="text/javascript" src="../js/html5.js"></script> 
 <![endif]-->
 
 <style>
@@ -72,7 +77,7 @@ body {
 	overflow-x: hidden;
 	background-color: #999;
 	/*
-	background-image:url(http://databank.u.qiniudn.com/images/travel_bg.jpg);
+	background-image:url(../images/travel_bg.jpg);
 	*/
 	background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAAAAAAAD/4QCKRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAZKGAAcAAABWAAAALAAAAABVTklDT0RFAABJAG4AdABlAGwAKABSACkAIABKAFAARQBHACAATABpAGIAcgBhAHIAeQAsACAAdgBlAHIAcwBpAG8AbgAgADEALAA1ACwANAAsADMANv/+ACpJbnRlbChSKSBKUEVHIExpYnJhcnksIHZlcnNpb24gMSw1LDQsMzYA/9sAQwABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/9sAQwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/8AAEQgAMgAyAwERAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A/l3eZC3MMQYmTBO9RzOrZwsYzjkcj5vbFAFZQnkxAeQAYVP3p/UHHMRz8p4oAv2qqkqqHjyJIyP9bxtkAPWIc4PB9e3qAVVTdJCC0R3g5YGQ4wDjgwc8DHTrz/FQA9WyJ2wnKry2OB50I7x84GP4unOM0AAc7WOyHnzh/q4zjAiPHB/A9txPPcAzHUM7sY7b5mZuVjB5JPIC4B9qALbTLsbdHLwrniUfdaWPb0fJGT25/EmgBqy/cUJNxby/el6lUh24/eEck8Z9PQ4oAvW1y4m/1c5/dMw4DZ2y8A/McnCgdSB68UARwySM1uFikypkGfs4cHCEnjk89f8Af7UAAM+yb9ycgJjFsneRAM/u8nBQ5GOoP4gBGZNvMZGRKOYAp5WE9o/fOeR796AK+8+g/I//ABFAGiITskYfZAPJbhVjHKtwcNEeuDj35BBxQBCWcfd8ghIGz/x7EkfL1yiHgdcj+EA0ATxSuuc7fkhl4VrftLKxyN4HOOgHf0oAgWQ+Yn7rI82UAYgzgx4/hk6YPqPmycegBCF3IT5LjcFU4A5PnFv4WbkAencdMZIBIkBABMB5MpJMY4BghOSdh/u54yfXOCKAKpQAkbF4OORg/iNvBoAuSCH7M+O0DfKssgOQZfWMAdR39Mc8kAhlWJhKURseUeA7NgthcZ8rPGcjqePqAATKqvv2qVzCx27ZMjLcbsRc9ew78UAKqeWynYx2tMDmK4AJCS8FvLTKgpnuTu7cZAIwv7vDEDPY+d8vy+b90jkYHbPHPPcAUDbGvz44JHzueGGD/Hgn2+70zjjABSOO8o/Mf/FH+ZoAuSKiRDYrHdFID8sg+ZQSw+XkjPHzfiTgUARKy+VN1zmJeYn7ynPUrn5QcZ4HXHTIBCpk6B926PgeW+7/AFqD+J/Rh+BoAWB5NzDr+8uOGjyN370EYOR7YweKALL7ZDjAHDZHyqqkqF/u4wPbk4OBigBMREJhVJ8lWyNitgbwQPkOeCfy9qAKTyR7mx03HHzIOMnsMAfTFAGrIqunEUh2lz0bADHvmMnjcexPB6cigCHaBFK/l/KbiMD5GA/5aPjLRjj+FufwagCqMAxMI5S37zJVsqBvt8f8sWwPm9ePWgBTxJJ8pBDv9PmZ/wCLaucgHJ9++TQBcBWRiGjGFcryx6cZz83dio+jY7UASWuw/wACgiHH8X99gOtwOuM8KQvpQBCYAx3bVGecfLxnnH+s7UATSj5P+2b/AKPHj8u1AFfOLVgOn2iL/wBBegCuGJkhBJI3yjBJx/rLX/E/maAHGR97/O/Rv4j/ANNvegCa3ll8w/vJPvL/ABt3kUHv3HB9uKAJraWQswMjkbGGC7Y+63vQAGSTJ+d+p/iP+NAA/9k=);
 	-webkit-user-select: none;
@@ -140,10 +145,10 @@ h1, h2, h3, h4, h5, p, span {
 
 #ie #header,
 #mobile #header {
-	background: url("images/header-image.jpg") no-repeat;
+	background: url("../images/header-image.jpg") no-repeat;
 	background-size: 100%;
 	background-size: cover;
-	filter: alpha(opacity = 80) progid:DXImageTransform.Microsoft.AlphaImageLoader(src='images/header-image.jpg', sizingMethod='scale')\9;
+	filter: alpha(opacity = 80) progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/header-image.jpg', sizingMethod='scale')\9;
 }
 
 #ie #handle,
@@ -228,7 +233,7 @@ h1, h2, h3, h4, h5, p, span {
 	top: 0;
 	margin: 0px auto;
 	/* 
-	background: rgba(0, 0, 0, 0.8) url("images/patterns/mooning.jpg") repeat;	 
+	background: rgba(0, 0, 0, 0.8) url("../images/patterns/mooning.jpg") repeat;	 
 	*/
 	-webkit-transition: all 1s ease-in-out;
 	   -moz-transition: all 1s ease-in-out;
@@ -346,7 +351,7 @@ h1, h2, h3, h4, h5, p, span {
 .main {
 	position: relative;
 	width: 100%;	
-	background: #999 url("images/patterns/white_wall_hash.jpg") repeat;
+	background: #999 url("../images/patterns/white_wall_hash.jpg") repeat;
 	border-top: #E6E6E6 solid 1px;
 	-webkit-box-shadow: 0px 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25), 0px 5px 30px 3px rgba(0, 0, 0, 0.2) inset;
 	-moz-box-shadow:    0px 1px 8px 1.5px rgba(0, 0, 0, 0.35), 0px 20px 70px 8px rgba(0, 0, 0, 0.25), 0px 5px 30px 3px rgba(0, 0, 0, 0.2) inset;
@@ -469,7 +474,7 @@ footer {
 #map {
 	height: 800px;
 	width: 100%;
-	background: url("map/images/map_bg_fit.jpg");
+	background: url("../map/images/map_bg_fit.jpg");
 	background-size: cover;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -556,7 +561,7 @@ footer {
 		font: 500 13px/1.5 'Optima', 'Verdana', 'Microsoft Yahei', sans-serif;
 	}
 	#header {
-		background: url("images/header-image.jpg") no-repeat;
+		background: url("../images/header-image.jpg") no-repeat;
 		background-size: 100%;
 		background-size: cover;
 	}
@@ -608,10 +613,10 @@ footer {
 
 <header id="header" class="jumbotron jumbotron-shadow">
     <div id="header-text" class="container header-elements">
-        <h1 id="title" class="header-elements"><img src="images/title.png"></h1>
+        <h1 id="title" class="header-elements"><img src="../images/title.png"></h1>
         <p id="subtitle" class="lead"> Frank Luo's Journey <br class="visible-desktop">
         Life is a long long journey. <br>
-        <a id="website-link" href="http://www.imlongluo.com" class="lead-link text-center" target="_blank" title="Wanna Know Me?" data-toggle="tooltip" data-placement="bottom">Surf My Website »</a></p>
+        <a id="website-link" href="http://www.imlongluo.com" class="lead-link text-center" target="_blank" title="了解关于我的一切" data-toggle="tooltip" data-placement="bottom">进入我的个人网站 »</a></p>
 	</div>
 	
     <div class="am-container under blur" id="am-container">
@@ -620,12 +625,12 @@ footer {
     </div>
     <div id="header-shadow" class="shadow"></div>
     <div id="handle" class="hide">
-		<a href="javascript:;"><img id="handle-chevron" src="images/chevron.png"></a>
+		<a href="javascript:;"><img id="handle-chevron" src="../images/chevron.png"></a>
     </div>
 </header>
 
 <div id="loading" class="text-center">
-    <img class="spinner" src="images/spinner.gif">
+    <img class="spinner" src="../images/spinner.gif">
     <span>加载中...</span>
 </div>
 
@@ -649,7 +654,7 @@ footer {
     	<div class="row">      
         	<div class="span12">  
                 <div id="map"></div>
-                <script type="text/javascript" src="map/js/map-data-world.js"></script>
+                <script type="text/javascript" src="../map/js/map-data-world.js"></script>
             </div>
             
             <div class="span12 about">
@@ -662,9 +667,9 @@ footer {
                             <li><p>All of these are the important experience of my life;</p></li>
                             <li><p>All the Geo co-ordinates are from the Google Map;</p></li>         
                             <li><p>You can change to the country to view the details, such as <a href="china.html" title="Change to China Map" pjax-title="Journey Frank Luo">China</a>;</p></li> 
-                            <li><p>Last Update Time: 27th, November, 2013. </p></li>
+                            <li><p>Last Update Time: November 27th, 2013. </p></li>
                         </ul>
-                    </div>          
+                    </div>                   
                 </div>
             </div>
         </div>
@@ -700,7 +705,7 @@ footer {
 <p>Copyright &copy; 2005 - 2013 Long Luo. All Rights Reserved.</p>
 </footer>
 
-<script type="text/javascript" src="bootstrap/scripts.min.js"></script>
+<script type="text/javascript" src="../bootstrap/scripts.min.js"></script>
 <script type="text/javascript">
 
 var $container 	= $('#am-container'),
@@ -790,7 +795,7 @@ $('#handle').click(function(){
 */
 
 $.pjax({
-     selector: 'a[href^="china.html"]',
+     selector: 'a[href^="world.html"]',
      container: '#content', //内容替换的容器
      show: 'fade', //展现的动画，支持默认和fade, 可以自定义动画方式，这里为自定义的function即可。
      cache: false, //是否使用缓存
@@ -816,7 +821,7 @@ document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3
 </script>
 
 <!-- CNZZ Statistics -->
-<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000135599'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000135599%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+<p style="text-indent: -9999px;"><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000135599'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000135599%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></p>
 
 </body>
 </html>

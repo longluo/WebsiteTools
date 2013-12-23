@@ -1,0 +1,300 @@
+<!--
+ _____    _____       ___   _____        _   _   _____   _____    _____  
+|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
+| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
+|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
+| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
+|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
+
+================================================
+	Copyright (C) Long Luo. All Rights Reserved.
+	Version: 5.0.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="android-app" content="sqlite database manager"/>
+
+<!-- CHANGE THIS TITLE TAG -->
+<title>SQLiteManager - A powerful SQLite management tool</title>
+
+<!-- media-queries.js -->
+<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<!-- html5.js -->
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<link href="font/stylesheet.css" rel="stylesheet" type="text/css" />	
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+<link href="css/media-queries.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://databank.u.qiniudn.com/fancybox/jquery.fancybox-1.3.4.pack.js" media="screen" />
+
+<meta name="viewport" content="width=device-width" />
+ 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link href='http://fonts.googleapis.com/css?family=Exo:400,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body data-spy="scroll">
+
+<!-- TOP MENU NAVIGATION -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+	
+			<a class="brand pull-left" href="http://imlongluo.com/android/SQLiteManager.html">
+			SQLiteManager - A powerful SQLite DataBase management tool
+			</a>
+	
+			<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</a>
+		
+			<div class="nav-collapse collapse">
+				<ul id="nav-list" class="nav pull-right">
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#updates">Updates</a></li>
+					<li><a href="#screenshots">Screenshots</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		
+		</div>
+	</div>
+</div>
+
+
+<!-- MAIN CONTENT -->
+<div class="container content container-fluid" id="home">
+
+	<!-- HOME -->
+	<div class="row-fluid">
+  
+		<!-- PHONES IMAGE FOR DESKTOP MEDIA QUERY -->
+		<div class="span5 visible-desktop">
+			<img src="img/phones.png">
+		</div>
+	
+		<!-- APP DETAILS -->
+		<div class="span7">
+	
+			<!-- ICON -->
+			<div class="visible-desktop" id="icon">
+				<img src="img/app_icon.png" />
+			</div>
+			
+			<!-- APP NAME -->
+			<div id="app-name">
+				<h1>SQLiteManager</h1>
+			</div>
+			
+			<!-- VERSION -->
+			<div id="version">
+				<span class="version-top label label-inverse">Version 3.0.4</span>
+			</div>
+            
+			<!-- TAGLINE -->
+			<div id="tagline">
+				Practice time management and get efficient everyday with SQLiteManager.
+			</div>
+		
+			<!-- PHONES IMAGE FOR TABLET MEDIA QUERY -->
+			<div class="hidden-desktop" id="phones">
+				<img src="img/phones.png">
+			</div>
+            
+			<!-- DESCRIPTION -->
+			<div id="description">
+				Time is important, time is money. SQLiteManager can help you to manage your time by deviding a long task to small pieces. We believe it is the BEST practice to use our app for the time management. Pomo Do will help you to focus on what you do under a rule of work/break cycle.
+			</div>
+            
+			<!-- FEATURES -->
+			<ul id="features">
+				<li>Standard work/break timer. Implemented under a basic rule of time management</li>
+				<li>To-Do List integrating. Manage and perform your schedule with a list.</li>
+				<li>Notifications. Just start working and wait for the ending alarm.</li>
+				<li>iOS built-in Reminder app integrating.</li>
+				<li>Exporting your data for analyzing or backup.</li>
+			</ul>
+		
+			<!-- DOWNLOAD & REQUIREMENT BOX -->
+			<div class="download-box">
+				<a href="https://itunes.apple.com/app/id533469911?mt=8"><img src="img/available-on-the-app-store.png"></a>
+			</div>
+			<div class="download-box">
+				<strong>Requirements:</strong><br>
+				Compatible with iPhone 3GS, iPhone 4, iPhone 4S, iPhone 5, iPod touch (3rd generation), iPod touch (4th generation), iPod touch (5th generation) and iPad. Requires iOS 6.0 or later. This app is optimized for iPhone 5 and iOS 7.
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- ABOUT & UPDATES -->
+	<div class="row-fluid" id="about">
+	
+		<div class="span6">
+			<h2 class="page-title" id="scroll_up">
+				About
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png">
+				</a>
+			</h2>
+			
+			<p>SQLiteManager is a tool for managing time in a work/break cycle pattern. Break down periods of work into 25-minute intervals separated by short breaks. Try to reduce the impact of internal and external interruptions, and you will get an efficient day!</p>
+			<p>You can use SQLiteManager to add pomos and breaks. There is also a project-based pomo management system to help you to track where you spent your time.</p> 
+			<p>See what the users said about SQLiteManager:</p> 
+			<blockquote>Has been using this for a whole day. Really like it. Easy and beautiful ui. Everything I want is here. - ZW</blockquote>
+			<blockquote>With the information overload I get on a daily basis- emails, apps on my phone that are distracting, articles to read etc this help me get back on track and stay focused one items at a time! Very helpful so my Brain doesn't always get super distracted! -Nlmartin3</blockquote>
+			<blockquote>I've tried a number of pomo apps and this has been the best one so far. The interface is aesthetically pleasing and intuitive to use. You can easily track your pomos with this -- the app records the task, date, and time automatically for each pomo and provides a history of your pomos in a list, a line graph or a pie chart. £­iamsy</blockquote>
+			<p>And now, it's your turn to begin your own way on managing your time and becoming efficient.</p>
+			
+		</div>
+	
+		<div class="span6 updates" id="updates">
+			<h2 class="page-title" id="scroll_up">
+				Updates
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png">
+				</a>
+			</h2>
+			
+			<!-- UPDATES & RELEASE NOTES -->
+			<h3 class="version">Version 3.0.4</h3>
+			<span class="release-date">Released on Oct 14th, 2013</span>
+			<ul>
+				<li><span class="label fix">FIX</span>Rewrite all logic for background mode. It should work perfect without unexpected finishing now.</li>
+				<li><span class="label fix">FIX</span>Fix some position in UI.</li>
+				<li><span class="label fix">FIX</span>An problem that causes timer icon dissappear in pomo edit view.</li>
+			</ul>
+			<hr>
+
+			<h3 class="version">Version 3.0.3</h3>
+			<span class="release-date">Released on Oct 7th, 2013</span>
+			<ul>
+				<li><span class="label fix">FIX</span>A problem that sometimes the timer get reset when running in background.</li>
+				<li><span class="label fix">FIX</span>A problem that sometimes the timer counts wrong if you paused it for a long time.</li>
+				<li><span class="label fix">FIX</span>A problem that some pomos finished or interrupted exceptionally.</li>
+				<li><span class="label fix">FIX</span>Some localization string for UI.</li>
+				<li><span class="label fix">FIX</span>A small spelling issue in motto.</li>
+				<li><span class="label fix">FIX</span>The black UI when switching to app's menu.</li>
+			</ul>
+			<hr>
+
+			<h3 class="version">Version 3.0.2</h3>
+			<span class="release-date">Released on Sep 17th, 2013</span>
+			<ul>
+				<li><span class="label fix">FIX</span>Add a tip in setting, to notify turning on the sound in system notification center. Or there will be no background finish sound for iOS 7.</li>
+				<li><span class="label fix">FIX</span>A problem which causes some achievements can not be gotten.</li>
+				<li><span class="label fix">FIX</span>Setting for tick sound will take effect immediately, instead of next pomodoro.</li>
+			</ul>
+			<hr>
+			
+			<p>All Change log can be found <a href="CHANGE_LOG.txt">here</a>.</p>
+		</div>
+	
+	</div>
+	
+	
+	<!-- SCREENSHOTS -->
+	<div class="row-fluid" id="screenshots">
+		
+		<h2 class="page-title" id="scroll_up">
+				Screenshots
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png">
+				</a>
+			</h2>
+		
+		<!-- SCREENSHOT IMAGES ROW 1-->
+		<ul class="thumbnails">
+			<li class="span3">
+				<a href="img/en-screen1.png" rel="gallery" class="thumbnail">
+				<img src="img/en-screen1.png" alt="">
+				</a>
+			</li>
+		
+			<li class="span3">
+				<a href="img/en-screen2.png" rel="gallery" class="thumbnail">
+				<img src="img/en-screen2.png" alt="">
+				</a>
+			</li>
+			
+			<li class="span3">
+				<a href="img/en-screen3.png" rel="gallery" class="thumbnail">
+				<img src="img/en-screen3.png" alt="">
+				</a>
+			</li>
+ 
+			<li class="span3">
+				<a href="img/en-screen4.png" rel="gallery" class="thumbnail">
+				<img src="img/en-screen4.png" alt="">
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	
+	
+	<!-- CONTACT -->
+	<div class="row-fluid" id="contact">
+	
+		<h2 class="page-title" id="scroll_up">
+				Contact
+				<a href="#home" class="arrow-top">
+				<img src="img/arrow-top.png">
+				</a>
+			</h2>
+		
+		<!-- CONTACT INFO -->
+		<div class="span4" id="contact-info">
+			<h3>Contact Us</h3>
+			<p>SQLiteManager is growing and under continuing development. If you have any ideas or questions about this app, please do not hesitate to contact us.</p>
+			<p>Every single user and the advices are important for us!<p>
+			<p><a href="mailto:longluo2005@gmail.com">Send us an email.</a></p>
+		</div>
+	</div>
+	
+</div>
+
+
+<!-- FOOTER -->
+<div class="footer container container-fluid">
+
+	<!-- COPYRIGHT - EDIT HOWEVER YOU WANT! -->
+	<div id="copyright">
+		SQLiteManager is brought to you by <a href="http://imlongluo.com">Long Luo</a>. You can find me easily by following @imlongluo(<a href="http://weibo.com/uniqueshine">Sina Weibo</a>).<br>
+	</div>
+	
+	<!-- CREDIT - PLEASE LEAVE THIS LINK! -->
+	<div id="credits">
+		<a href="http://www.trippoinc.com/flexapp">Theme</a> by <a href="http://www.trippoinc.com">Trippo</a>.
+	</div>
+
+</div>
+
+<script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-collapse.js"></script>
+<script src="js/bootstrap-scrollspy.js"></script>
+<script src="http://databank.u.qiniudn.com/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script src="http://databank.u.qiniudn.com/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script src="http://databank.u.qiniudn.com/js/init.js"></script>
+
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1000135599'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s22.cnzz.com/z_stat.php%3Fid%3D1000135599%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>
+

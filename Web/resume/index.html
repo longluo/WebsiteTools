@@ -1,0 +1,133 @@
+<!--
+
+===================================================================================
+	 _____    _____       ___   _____        _   _   _____   _____    _____  
+	|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
+	| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
+	|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
+	| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
+	|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
+
+==================================================================================
+	Copyright (C) 2005 - 2013 Long Luo. All Rights Reserved.
+	Version: 2.0
+	Modified by Long Luo @December 23th, 2013 at Shenzhen, China.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> My Resume </title>
+
+	<meta name="description" content="Resume, Long Luo, Frank Luo, 罗龙, HR, IT" >
+	<meta name="keywords" content="Long Luo, Luo Long, Frank Luo, 罗龙, Resume, " >
+	<meta name="author" content="Long Luo, Frank Luo, 罗龙, 简历, " >
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- JavaScript-->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+    </script>
+    <![endif]-->
+</head>
+
+<body>
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+    	<div class="container">
+            <a class="btn btn-navbar" href="javascript:;" onClick="collapse('.nav-collapse');"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+            <a href="index.html" class="brand"><img src="images/logo.png" width="42" height="45" /></a>
+            <div class="nav-collapse">
+                <ul class="nav">
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="" class="unprepared">VPlayer Tech</a></li>
+                    <li><a href="" class="unprepared">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TimelineJS -->
+<div class="indexbar">
+	<div id="timeline-embed"></div>
+</div>
+<script type="text/javascript">
+	var timeline_config = {
+		width:	"100%",
+		height:	"100%",
+		debug:	false,
+		source:	'example_jsonp.html',
+    start_at_slide: '3'
+	}
+
+</script>
+<script type="text/javascript" src="TimelineJS-master/compiled/js/storyjs-embed.js"></script>
+
+<!-- END Timeline Embed-->
+<div class="footer">
+	<div class="footer-inner">
+    	<div class="container">
+        	<div class="logo">
+            	<p class="img"><img src="images/ft_logo.png" / ></p>
+            	<p>VPLayer</p>
+            </div>
+            <div class="ft-widget">
+            	<div class="widget">
+                  <h2><a href="products.html">Products</a></h2>
+                    <ul class="footer-list">
+                    	<li><a href="products.html#android">VPlayer for Android</a></li>
+                    	<li><a href="products.html#ios">VPlayer for iOS</a></li>
+                    </ul>
+                </div>
+                <div class="widget">
+                  <h2><a href="faq.html">FAQ</a></h2>
+                    <ul class="footer-list">
+                      <li><a href="faq.html#android">VPlayer for Android</a></li>
+                      <li><a href="faq.html#ios">VPlayer for iOS</a></li>
+                    </ul>
+                </div>
+                <div class=" widget unprepared">
+                	<h2>VPlayer Tech</h2>
+                    <ul class="footer-list">
+                    	<li><a href="">VPlayer for iOS</a></li>
+                      <li><a href="">VPlayer for Android</a></li>
+                    </ul>
+                </div>
+                <div class=" widget unprepared">
+                	<h2>About</h2>
+                    <ul class="footer-list">
+                    	<li><a href="">Jobs</a></li>
+                      <li><a href="">Contact us</a></li>
+                      <li><a href="">site status</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="ft-text">&copy; 2013 Long Luo. All rights reserved</div>
+
+<script src="https://dn-staticfile.qbox.me/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript">
+function collapse(id){
+	if($(id).css('display')=='none'){
+		$(id).show().addClass('collapse');
+		$('body').addClass('nop');
+	}else{
+		$(id).hide().removeClass('collapse');
+		$('body').removeClass('nop');
+	}
+}
+</script>
+</body>
+</html>

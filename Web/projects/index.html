@@ -1,0 +1,395 @@
+﻿<!--
+===================================================================================
+	 _____    _____       ___   _____        _   _   _____   _____    _____  
+	|  _  \  | ____|     /   | |  _  \      | | | | | ____| |  _  \  | ____| 
+	| |_| |  | |__      / /| | | | | |      | |_| | | |__   | |_| |  | |__   
+	|  _  /  |  __|    / / | | | | | |      |  _  | |  __|  |  _  /  |  __|  
+	| | \ \  | |___   / /  | | | |_| |      | | | | | |___  | | \ \  | |___  
+	|_|  \_\ |_____| /_/   |_| |_____/      |_| |_| |_____| |_|  \_\ |_____| 
+
+===================================================================================
+	Copyright (C) Long Luo. All Rights Reserved.
+	Version: 4.01.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>  
+	<title> My Prpojects </title>
+	
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+    <meta name="description" content="Projects, Long Luo, Frank Luo, 罗龙, Android, iOS, IT, MI, Mobile, Internet, 项目, 移动开发, 应用" />
+	<meta name="keywords" content="Projects, Long Luo, Frank Luo, 罗龙, Android, iOS, IT, MI, Mobile, Internet, 项目, 移动开发, 应用" />
+	<meta name="author" content="Long Luo, Frank Luo" />
+	
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<base target="_blank">
+	
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700|Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss/">
+</head>
+
+<body class="home-template">
+
+<header id="site-head" style="background-image: url(/content/images/2013/Oct/retro_blurred_14.jpg)">
+    <div class="vertical">
+        <div id="site-head-content" class="inner">
+
+            <h1 class="blog-title">我的项目</h1>
+            <h2 class="blog-description">Projects by Long Luo</h2>
+
+            <a class='btn first'>Take a tour</a>
+            <a class='btn last'>Contact Me</a><br>
+            <i id='header-arrow' class="icon-angle-down"></i>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+    <div class='fixed-nav'>
+    </div>
+    <div class='post-holder'>
+                <article class="post first">
+            <header class="post-header">
+                <h2 class="post-title">VVDocumenter</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>23th Jul 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_vvdocumenter.png" alt="image" />
+</center></p>
+
+<p><code>VVDocumenter</code>是一个Xcode插件，它的出现彻底改变了大家在Xcode中书写文档的方式。</p>
+
+<p>一直以来虽然Objective-C代码因为其可读性极强，而不太需要时常查阅文档，但是其实对于大多数人（包括我自己）来说，可能为方法或变量取一个好名字并不是那么简单的事情。这时候可能就需要文档或者注释来帮助之后的开发者（包括大家自己）尽快熟悉和方便修改。但是用Xcode写文档是一件让人很头疼的事情，Xcode对写文档的支持几乎为0，没有像VS之类的成熟IDE的方便的方法，一直以来都是依靠像Snippet这样的东西，然后自己辛苦填写大量已有的内容。</p>
+
+<p>之前在<a href="http://blog.chukong-inc.com/index.php/2012/05/16/xcode4_fast_doxygen/">这里</a>看到一个用Ruby+系统服务来生成注释的方案，但是每次要自己去选还要按快捷键，总觉得是很麻烦的事情。借鉴其他平台IDE一般都是采用三个斜杠（///）来生成文档注释的方法，所以也为Xcode写了一个类似的。用法很简单，在要写文档的代码上面连打三个斜杠，就能自动提取参数等生成规范的Javadoc格式文档注释。VVDocumenter整个项目MIT开源，并且扔在github上了，有兴趣的朋友可以从下面的链接找到，欢迎大家加星fork以及给我发pull request来改善这个插件。</p>
+
+<p>Writing document is so important for developing, but it was really painful with Xcode, until the <code>VVDocumenter</code> came out. Think about how much time you are wasting in pressing ‘*’ or ‘/’, and typing the parameters again and again. Now, you can find the method (or any code) you want to document to, and type in ///, the document will be generated for you and all params and return will be extracted into a beatiful Javadoc style. You can just fill the inline placeholders to finish your document。</p>
+
+<p>Enjoy to use it and find more in the GitHub page. You are welcome to fork it and help to improve by pull-request.</p>
+
+<p><center>  </p>
+
+<div class="github-card" data-user="onevcat" data-repo="VVDocumenter-Xcode" data-width=100% data-height="177"></div>  
+
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+
+<h1>  
+<a href="https://github.com/onevcat/VVDocumenter-Xcode" class="icon-github"></a>  
+</h1>
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+
+    
+    <div class='post-holder'>
+        
+            
+                
+                    <article class="post">
+                
+            
+        
+            <header class="post-header">
+                
+                <h2 class="post-title">英雄Slash(Hero Slash)</h2>
+
+            </header>
+            <section class="post-content">
+                <p><p><code>22th Jul 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_heroslash.png" alt="image" />
+</center></p>
+
+<p><code>英雄Slash</code>（全国ヒーロースラッシュバトル）是我在Kayac承担的受托项目之一，是和日本知名游戏厂商Bushimo一同进行开发的游戏。我全程参与了这个项目的开发，在其中担任游戏核心的所有开发工作，并完成了部分UI工作。在这个项目中，我和日本、越南、印尼和法国等国家的开发者一同工作，相互协作推进项目进行，可以说是一段奇妙的开发体验。</p>
+<p><code>Hero Slash</code> is a client project during my career in Kayac. It is a coporation project with Bushimo, which is a famous Japanese game company. I attended to this project from the very begining. I developed the core game part and some UI part with my team. It was an amazing experience for me to work with Japanese, Vietnamese and French developers together. Great time in my life.</p>
+<p><center>  </p>
+<h1>  
+<a href="https://itunes.apple.com/jp/app/id633834373" class="icon-apple"></a>  
+<a href="https://play.google.com/store/apps/details?id=com.bushiroad.heroslash" class="icon-android"></a>  
+<a href="http://slashbattle.bushimo.jp" class="icon-globe"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+
+    <div class='post-holder'>
+                    <article class="post">
+            <header class="post-header">                
+                <h2 class="post-title">UniRate</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>18th Jul 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_unirate.png" alt="image" />
+</center></p>
+
+<p><code>UniRate</code>是一个帮助Unity移动游戏开发者简单集成AppStore/Google Play Market评分提示功能的插件。当用户打开应用指定次数和天数时，将弹出窗口提示用户评价应用。用户如果选择评价，<code>UniRate</code>将自动引导用户前往对应的页面进行评价。用户也可以选择稍后评价或不评价。采用这样的策略可以得到尽可能多的5星评论，对于推广应用很有好处。</p>
+<p>UniRate的集成和使用非常简单，在拖拽一次就完美工作的同时，也提供了各种详细的设定，可以使UniRate按照设定工作。对于UniRate，我会提供完整的支持和更新，包括完善的使用指引，文档信息和论坛支持。</p>
+<p><code>UniRate</code> is a Unity plugin for mobile game developers to integrate AppStore/Google Play Market rating prompt in the project easily. When users opened the app for some times and some days, a prompt alert window will pop up to ask users for rating. If users agree to rate, <code>UniRate</code> will lead the users to the proper rating page for your game. Users also can choose to rate it later or never. By using this prompt strategy, you can receive positive reviews as many as possible, which is quit critical for the promotion of your game.</p>
+<p>The using of UniRate is as simple as a single drag &amp; drop. As the same time, it also provides enough config options for you to adjust the action of this plugin. You can set and let it works as you want. I will supply full support and update for this project, including great manual, complete documentation and forum support.</p>
+
+<p><center>  </p>
+
+<h1>  
+<a href="https://www.assetstore.unity3d.com/#/content/10116" class="icon-shopping-cart"></a>  
+<a href="http://unirate.onevcat.com" class="icon-globe"></a>  
+<a href="http://unirate.onevcat.com/reference/class_uni_rate.html" class="icon-book"></a>  
+<a href="http://forum.unity3d.com/threads/192622-UniRate-A-better-drop-in-solution-for-mobile-rating-prompt" class="icon-comments"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    <div class='post-holder'>
+                    <article class="post">
+            <header class="post-header">
+                
+                <h2 class="post-title">音量录音机(Volume Recorder)</h2>
+
+            </header>
+            <section class="post-content">
+                <p><p><code>12th May 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_volrec.png" alt="image" />
+</center></p>
+<p><code>音量录音机</code>是一款帮助您解决梦话、会议、嘈杂或者取证等情景下录音需求的app。它可以根据监测到的音量来自动进行录音，您能够在获得所有录音信息的同时节省您的设备空间和电量。这是一个免费应用，也不会包含任何广告或者录音限制等，唯一的限制是您只有通过内购完全版才能将录音导出，同时可以获得同步至Dropbox等更多功能。</p>
+<p>对于录音的处理，由于在预想的使用情景中可能面临时间长，碎片多等问题，实现时采用了比较低层级的手段，可以说是被迫读了一些C和C++的代码。因为其实之前在绝大多数情况下我都在和高层级的API和界面交互打交道，所以对于纯C的代码还是比较怵的，不过幸好坚持下来并且完成了。回头想一想，收获是很大的，希望这会成为一个契机，能够静下心来将某些知识深入下去。</p>
+<p><code>Volume Recorder</code> is an app to help you record voice in some special situation, sleep-talking, meeting, noisy environmrnt or evidence gathering for example. It will detect the volume of the voice and control the resuming and pausing automatically. You can get all voice while using less disk spaace and battery energy. This is a free app, it will never contain any advertisement and recording limitation. If you want export your recording, you can purchase the pro version in the app. You can also sync and backup your recordings with Dropbox and Google Drive.</p>
+
+<p><center>  </p>
+
+<h1>  
+<a href="https://itunes.apple.com/app/id646243166" class="icon-apple"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    
+    <div class='post-holder'>        
+                    <article class="post">
+            <header class="post-header">               
+                <h2 class="post-title">XUPorter</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>11th May 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_xuporter-1.png" alt="image" />
+</center></p>
+<p><code>XUPorter</code>是一个开源的Unity3D编译Xcode工程的依赖管理工具。它能够在Unity3D生成Xcode工程文件后，根据配置文件自动添加依赖库和引用文件的工具。它使用PostProcessBuild标签，在编译后寻找配置文件并修改Xcode工程文件，完全运行于Unity3D编辑器中，而不需要涉及PostprocessBuildPlayer的脚本编写和调试，十分方便。</p>
+<p>XUPorter的适用版本为Unity3.5及以上，以及Xcode 4.x以上。（Unity 4.x及Xcode 5中亦能工作正常）</p>
+<p><code>XUPorter</code> is an open source tool for dependency management for Xcode project exported by Unity 3D. It will add dependence libraries and reference files for you as you configured. By using the [PostProcessBuild] attribute, it will find out the Xcode project file and modity it through a config file. All the progress is done in Unity Edtior, so there is no post-process script and you can use it without little knowledge with Xcode.</p>
+<p>XUPorter is compatible with Unity 3.5, Xcode 4.x or above. (Also works well in Unity 4.x and  Xcode 5)</p>
+<p><center>  </p>
+<div class="github-card" data-user="onevcat" data-repo="XUPorter" data-width=100% data-height="177"></div>  
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+<h1>  
+<a href="https://github.com/longluo/XUPorter" class="icon-github"></a>  
+<a href="http://onevcat.com/2012/12/xuporter/" class="icon-globe"></a>  
+</h1>
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    <div class='post-holder'>
+                    <article class="post">
+            <header class="post-header"> 
+                <h2 class="post-title">云端记账(Our Money)</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>21st Mar 2013</code></p>
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_ourmoney.png" alt="image" />
+</center></p>
+<p><code>云端记账 - Our Money</code>是我在业余时间开发的一款云端多人协同记账的iOS应用。该app最大的特点是可以很简单地实现多人共享一个账本进行记账，从而免去了汇总和统计的麻烦（想像一下老公每天要记住自己的开销，然后晚上回家向老婆汇报的噩梦）。现在可以多人随时记录，相互间协作和无缝同步。简单高效的UI以及完全无感的自动后端同步，可以帮助养成记账的良好习惯，进而追踪自己的日常开销。</p>
+<p><code>Cloud Account - Our Money</code> is an accounting app I developed in my free time, which runs on iOS with a cloud backend. This app can let you share your accounting work with your families in a really simple way. Thanks to the background sync and effecient UI, there would not any difficulty in calculation and selection what and how to record your daily spend.</p>
+
+<p><center>  </p>
+
+<h1>  
+<a href="https://itunes.apple.com/app/id562520527?mt=8" class="icon-apple"></a>  
+<a href="http://ourmoney.onevcat.com" class="icon-globe"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    <div class='post-holder'>
+                    <article class="post">
+            <header class="post-header">
+                
+                <h2 class="post-title">冒险谜题王国(QuizKingdom)</h2>
+
+            </header>
+            <section class="post-content">
+                <p><p><code>30th Jan 2013</code></p>
+
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_quizking.png" alt="image" />
+</center></p>
+
+<p><code>QuizKingdom</code>（冒険クイズキングダム）是我加入Kayac后参与开发的第一款作品。该游戏是iOS及Android平台的基于问答的含有RPG元素的益智类游戏。QuizKingdom是由Unity3D开发的，游戏内容十分丰富，在日本区下载量突破了200万次。</p>
+<p>我在项目中主要负责部分题目类型的设计和制作，并对项目中使用的一些基础代码进行了调整和优化。</p>
+<p><code>QuizKingdom</code> is the first project I attended after joining Kayac Inc. This is a social game with some quiz and RPG element. It is developed by Unity3D and published on both iOS and Android. This game gets a great success in Japan and beyonds 2 million download by now. </p>
+<p>I designed and developed some types of the quiz in the project. And I rewrote some basic code to optimize the game.</p>
+
+<p><center>  </p>
+
+<h1>  
+<a href="https://itunes.apple.com/app//id560442729" class="icon-apple"></a>  
+<a href="https://play.google.com/store/apps/details?id=com.kayac.quizkingdom" class="icon-android"></a>  
+<a href="http://quiz-kingdom.kayac.com" class="icon-globe"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    <div class='post-holder'>
+                    <article class="post">
+            <header class="post-header">                
+                <h2 class="post-title">番茄工作法(Pomodoro Do)</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>25th Jul 2012</code></p>
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_pomo.png" alt="image" />
+</center></p>
+<p><code>Pomodoro Do</code>是iOS上的一个番茄工作法计时辅助工具，配合番茄工作法，可以更加专注，减少不必要的时间浪费，从而提高效率。我利用硕士毕业后，日语培训前的短暂时间空隙内完成了这款应用，并一直在不断维护。从创意、设计、编码到推广均由自己独立完成，因此收获颇丰。这款应用在没有任何推广费用投入的情况下多次进入中国区效率榜前3名，并帮助了很多用户节约时间，提高效率，得到一致好评。</p>
+<p>自己所开发的应用能够真的有用，能够帮助别人，同时自己能有所收获，这对我来说是最开心的事情了。</p>
+<p><code>Pomodoro Do</code> is an app to help you manage your time in an efficient way. I made it in the gap between I got my master degree and work in Japan. It is under continuely improveming development unitl now. I did it from idea, design and coding to the last promotion all by myself. And I can say aloud it gets Top 3 in China Productivity frequently without any promotion fee. It helps a lot of users to save time and get effecient, and gets hundreds of 5 stars in AppStore.</p>
+<p>It is fatastic that I have made something great to use. I am very happy that I can help others in this way.</p>
+<p><center>  </p>
+
+<h1>  
+<a href="http://itunes.apple.com/cn/app/pomodoro-do/id533469911?ls=1&mt=8" class="icon-apple"></a>  
+<a href="http://pomo.onevcat.com" class="icon-globe"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    
+    <div class='post-holder'>        
+                    <article class="post">
+            <header class="post-header">                
+                <h2 class="post-title">小熊推金币(Coin Push - iBear Story)</h2>
+            </header>
+            <section class="post-content">
+                <p><p><code>12th Nov 2011</code></p>
+<p><center> <br />
+<img src="/content/images/2013/Oct/app_coin.png" alt="image" />
+</center></p>
+
+<p><code>小熊推金币</code>是我在攻读硕士期间在北京锐德无限兼职时开发的iOS/Android平台的休闲类游戏，模拟并扩展了了街机厅推币机的游戏方式，并加入了诸如联机对战，服饰系统，好友系统等许多有趣的SNS游戏元素。我担当完成了该游戏的全部程序部分，这个作品在AppStore上曾在多个国家取得娱乐榜第一，总排行榜前三的好成绩，全球范围内下载量超过500万次。</p>
+<p>现在iOS版已经下架，您还可以从下面的连接中找到Android版。另外该作的续作<code>小熊推金币2</code>正在锐意制作中，敬请期待。</p>
+<p><code>Coin Push - iBear Story</code> is a game a made as a part-time job in Red Infinity Corporation in Beijing, during my master degree time. It is an iOS/Android casual game powered by Unity3D, which simulated of a coin pusher in game bar. I did all the program work in this game, and it got a great success in AppStore, with Top 1 on Entertainment category and Top 3 on Overall Rank in several different country. It was downloaded over 5 million times all over the world.</p>
+<p>The iOS version is already removed from AppStore, but fortunately you can still download the Android version. Good news is <code>Coin Push - iBear Story 2</code> is under developing now. Look forward to it!</p>
+<p><center>  </p>
+
+<h1>  
+<a href="https://play.google.com/store/apps/details?id=com.loverita.allen&hl=en" class="icon-android"></a>  
+<a href="https://speakerdeck.com/onevcat/coin-push-ibear-story" class="icon-play-circle"></a>  
+<a href="http://lab.weiphone.com/iPhone/games/2011-05-17/Cubs_pushed_gold_Pro_Edition_235487.shtml" class="icon-globe"></a>  
+</h1>  
+
+<p></center></p></center></p></p>
+            </section>
+        </article>
+        <div class='post-after'></div>
+    </div>
+    <div class='post-holder'>
+                    <article class="post last">
+            <header class="post-header">
+                <h2 class="post-title">联系我 (Contact me)</h2>
+            </header>
+            <section class="post-content">
+                <p><p><center> <br />
+<img src="/content/images/2013/Oct/photo_png.jpeg" alt="" />
+</center></p>
+
+<p>我是王巍(@onevcat)，我一般活跃在GitHub，新浪微博和Twitter，当然您也可以给我邮件。您可以告诉我任何您的想法和需求，或者如果您有什么好点子我能帮上忙，也欢迎与我联系。另外，我还有一些不值一提的开源项目放在GitHub上，您有兴趣的话也可以在我的页面找到它们。如果这些项目能对您有所帮助，我会非常开心。如果您乐于支持我的项目和更多新项目的继续发展，欢迎进行无负担小额捐助，十分感谢。</p>
+<p>I am Wei Wang (@onevcat). You can contact me with GitHub, Sina Weibo and Twitter. Of course email is welcome as well. Please tell me what do you think about of these projects. I would be very happy if these projects can help you in any way. There are also some small open source code on my GitHub, you can find them easily in my GitHub page. If you feel like to support me to develop, some small donate is welcome and I will try my best to do work well. Thank you very much.</p>
+<p><center>  </p>
+
+<h1>
+
+<div class="github-card" data-user="onevcat" data-width=100% data-height=""></div>  
+<script src="http://lab.lepture.com/github-cards/widget.js"></script>
+
+<a href="https://github.com/longluo" class="icon-github"></a>  
+<a href="http://weibo.com/uniqueshine/" class="icon-weibo"></a>  
+<a href="https://twitter.com/" class="icon-twitter"></a>  
+<a href="http://www.linkedin.com/" class="icon-linkedin"></a>  
+<a href="mailto:<a href='mailto:onev@gmail.com'>****</a>?Subject=Hello%20onevcat" class="icon-envelope"></a>  
+</h1>  
+
+<p>
+</center>
+</p>
+
+<p>
+<center> 
+	<br />
+	<a style="text-decoration:none; margin:0" href="https://me.alipay.com/onevcat" class="btn download" target="_blank">支付宝</a>  <a style="text-decoration:none; margin:0" href="https://flattr.com/submit/auto?user_id=onevcat&amp;url=http%3A%2F%2Fproject.onevcat.com" class="btn download" target="_blank">Flattr</a> <br />
+</center>
+</p>
+</center></p>
+				</p>
+			</section>
+		</article>
+		<div class='post-after'></div>
+	</div>
+</main>
+
+<footer class="site-footer">
+	<div class="inner">
+		<section class="poweredby"><a href="/">GhostScroll</a> theme by <a href="http://grmmph.com">Yonatan</a>.<br>
+		Proudly published with <a class="i-ghost" href="http://ghost.org">Ghost</a></section>
+	</div>
+</footer>
+
+<script src="/shared/vendor/jquery/jquery.js"></script>
+<script type="text/javascript" src="/assets/js/index.js"></script>
+
+<!-- Baidu Statistics -->
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fb4c6c0df76415ca14358f56e0f957de1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<!-- CNZZ Statistics -->
+<p style="text-indent: -9999px;"><script src="http://s22.cnzz.com/z_stat.php?id=1000135599&web_id=1000135599" language="JavaScript"></script></p>
+
+</body>
+</html>
