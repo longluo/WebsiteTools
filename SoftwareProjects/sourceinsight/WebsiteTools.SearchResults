@@ -100,3 +100,87 @@ World-map.js (frontenddev\bjornd-jvectormap\lib):    var insets = jvm.WorldMap.m
 World-map.js (frontenddev\bjornd-jvectormap\lib):jvm.WorldMap.maps = {};
 World.html (web):.nav-maps {
 World.html (web):        <ul class="nav nav-tabs nav-maps">
+---- home-template Matches (1 in 1 files) ----
+Index.html (web\projects):<body class="home-template">
+---- site-head Matches (2 in 1 files) ----
+Index.html (web\projects):<header id="site-head" style="background-image: url(/content/images/2013/Oct/retro_blurred_14.jpg)">
+Index.html (web\projects):        <div id="site-head-content" class="inner">
+---- tencent Matches (4 in 3 files) ----
+Base.css (web\projects\css):		ul.social li.tencent a 					{ background-position: 0px -192px; }
+Base.css (web\projects\css):			ul.social li.tencent a:hover 	{ background-position: -24px -192px; }
+Index.html (web\projects):					<li class="tencent"><a href="http://t.qq.com/xxququ" target="_blank">腾讯微博</a></li>
+Xququ.html (web\projects):					<li class="tencent"><a href="http://t.qq.com/xxququ" target="_blank">腾讯微博</a></li>
+---- social Matches (73 in 12 files) ----
+Base.css (web\projects\css):ul.social {
+Base.css (web\projects\css):	ul.social li {
+Base.css (web\projects\css):		ul.social li a {
+Base.css (web\projects\css):			background: url('../images/light-social.png') no-repeat top left;
+Base.css (web\projects\css):		ul.social li.facebook a 				{ background-position: 0px 0px; }
+Base.css (web\projects\css):			ul.social li.facebook a:hover { background-position: -24px 0px; }
+Base.css (web\projects\css):		ul.social li.twitter a 					{ background-position: 0px -24px; }
+Base.css (web\projects\css):			ul.social li.twitter a:hover 	{ background-position: -24px -24px; }
+Base.css (web\projects\css):		ul.social li.dribbble a 				{ background-position: 0px -48px; }
+Base.css (web\projects\css):			ul.social li.dribbble a:hover { background-position: -24px -48px; }
+Base.css (web\projects\css):		ul.social li.google a 					{ background-position: 0px -72px; }
+Base.css (web\projects\css):			ul.social li.google a:hover 	{ background-position: -24px -72px; }
+Base.css (web\projects\css):		ul.social li.flickr a 					{ background-position: 0px -96px; }
+Base.css (web\projects\css):			ul.social li.flickr a:hover 	{ background-position: -24px -96px; }
+Base.css (web\projects\css):		ul.social li.rss a 							{ background-position: 0px -120px; }
+Base.css (web\projects\css):			ul.social li.rss a:hover 			{ background-position: -24px -120px; }
+Base.css (web\projects\css):		ul.social li.email a 						{ background-position: 0px -144px; }
+Base.css (web\projects\css):			ul.social li.email a:hover 		{ background-position: -24px -144px; }
+Base.css (web\projects\css):		ul.social li.sina a 						{ background-position: 0px -168px; }
+Base.css (web\projects\css):			ul.social li.sina a:hover 		{ background-position: -24px -168px; }
+Base.css (web\projects\css):		ul.social li.tencent a 					{ background-position: 0px -192px; }
+Base.css (web\projects\css):			ul.social li.tencent a:hover 	{ background-position: -24px -192px; }
+Cube.html (web\fancy\cube):				<div id='social'>
+Cube.html (web\fancy\cube):						<div class='social-icon'><a href="http://www.facebook.com/TheCapitolPN" target="_blank"><span class="icon-facebook"></span></a></div>
+Cube.html (web\fancy\cube):						<div class='social-icon'><a href="https://twitter.com/TheCapitolPN" target="_blank"><span class="icon-twitter"></span></a></div>
+Cube.html (web\fancy\cube):						<div class='social-icon'><a href="https://plus.google.com/+TheHungerGamesMovies/posts" target="_blank"><span class="icon-google-plus"></span></a></div>
+Cube.html (web\fancy\cube):						<div class='social-icon'><a href="http://instagram.com/CapitolCouture" target="_blank"><span class="icon-instagram"></span></a></div>
+Cube.html (web\fancy\cube):						<div class='social-icon'><a href="https://www.youtube.com/thehungergamesmovie" target="_blank"><span class="icon-youtube"></span></a></div>
+Flower.html (web\fancy\flower):				<div id='social'>
+Flower.html (web\fancy\flower):						<div class='social-icon'><a href="http://www.facebook.com/TheCapitolPN" target="_blank"><span class="icon-facebook"></span></a></div>
+Flower.html (web\fancy\flower):						<div class='social-icon'><a href="https://twitter.com/TheCapitolPN" target="_blank"><span class="icon-twitter"></span></a></div>
+Flower.html (web\fancy\flower):						<div class='social-icon'><a href="https://plus.google.com/+TheHungerGamesMovies/posts" target="_blank"><span class="icon-google-plus"></span></a></div>
+Flower.html (web\fancy\flower):						<div class='social-icon'><a href="http://instagram.com/CapitolCouture" target="_blank"><span class="icon-instagram"></span></a></div>
+Flower.html (web\fancy\flower):						<div class='social-icon'><a href="https://www.youtube.com/thehungergamesmovie" target="_blank"><span class="icon-youtube"></span></a></div>
+Fluidapp.js (web\projects\js):	$("ul.social li a").each(function() {
+Glace.html (web\fancy\glace):				<div id='social'>
+Glace.html (web\fancy\glace):						<div class='social-icon'><a href="http://www.facebook.com/TheCapitolPN" target="_blank"><span class="icon-facebook"></span></a></div>
+Glace.html (web\fancy\glace):						<div class='social-icon'><a href="https://twitter.com/TheCapitolPN" target="_blank"><span class="icon-twitter"></span></a></div>
+Glace.html (web\fancy\glace):						<div class='social-icon'><a href="https://plus.google.com/+TheHungerGamesMovies/posts" target="_blank"><span class="icon-google-plus"></span></a></div>
+Glace.html (web\fancy\glace):						<div class='social-icon'><a href="http://instagram.com/CapitolCouture" target="_blank"><span class="icon-instagram"></span></a></div>
+Glace.html (web\fancy\glace):						<div class='social-icon'><a href="https://www.youtube.com/thehungergamesmovie" target="_blank"><span class="icon-youtube"></span></a></div>
+Index.html (web\projects):				<ul class="social">
+Index.html (web\projects):<p><code>QuizKingdom</code> is the first project I attended after joining Kayac Inc. This is a social game with some quiz and RPG element. It is developed by Unity3D and published on both iOS and Android. This game gets a great success in Japan and beyonds 2 million download by now. </p>
+Refer.html (web\projects):<div class='social row'>
+Styles.css (web\fancy\css):  #bar #social {
+Styles.css (web\fancy\css):    #bar #social .icon-container {
+Styles.css (web\fancy\css):  #bar .social-icon {
+Styles.css (web\fancy\css):    #bar .social-icon a {
+Styles.css (web\fancy\css):    #bar .social-icon a:hover {
+Styles.css (web\fancy\css):    #bar .social-icon span {
+Styles.css (web\fancy\cube\css):  #bar #social {
+Styles.css (web\fancy\cube\css):    #bar #social .icon-container {
+Styles.css (web\fancy\cube\css):  #bar .social-icon {
+Styles.css (web\fancy\cube\css):    #bar .social-icon a {
+Styles.css (web\fancy\cube\css):    #bar .social-icon a:hover {
+Styles.css (web\fancy\cube\css):    #bar .social-icon span {
+Styles.css (web\fancy\flower\css):  #bar #social {
+Styles.css (web\fancy\flower\css):    #bar #social .icon-container {
+Styles.css (web\fancy\flower\css):  #bar .social-icon {
+Styles.css (web\fancy\flower\css):    #bar .social-icon a {
+Styles.css (web\fancy\flower\css):    #bar .social-icon a:hover {
+Styles.css (web\fancy\flower\css):    #bar .social-icon span {
+Styles.css (web\fancy\glace\css):  #bar #social {
+Styles.css (web\fancy\glace\css):    #bar #social .icon-container {
+Styles.css (web\fancy\glace\css):  #bar .social-icon {
+Styles.css (web\fancy\glace\css):    #bar .social-icon a {
+Styles.css (web\fancy\glace\css):    #bar .social-icon a:hover {
+Styles.css (web\fancy\glace\css):    #bar .social-icon span {
+Xququ.html (web\projects):				<ul class="social">
+Xququ.html (web\projects):						<ul class="social">
+Xququ.html (web\projects):						<ul class="social">
+Xququ.html (web\projects):						<ul class="social">
+Xququ.html (web\projects):						<ul class="social">
