@@ -1,8 +1,6 @@
 
-
 iQiyi IP:
 http://220.181.184.183/
-
 
 iQiyi Source Code:
 http://www.iqiyi.com/v_19rrhynlvs.html
@@ -17,7 +15,6 @@ http://183.60.174.82/videos/v0/20140605/85/5e/e1/9942e4489489563a697e91cdf39aa0f
 Home界面：
 
 Full request URI: http://iface.iqiyi.com/api/iface5?key=100202020212683645b3e876cb661d63&id=7f15c6eafc&all_episode=-1&version=1.0&only_data=1
-
 
 
 Full request URI [truncated]: 
@@ -43,16 +40,9 @@ Full request URI: http://data.video.qiyi.com/videos/v0/20140605/85/5e/e1/9942e44
 var videoUrl={code:"A00000",data:{"l":"http://183.61.167.51/videos/v0/20140605/85/5e/e1/9942e4489489563a697e91cdf39aa0f5.mp4?key=c1718d31bc966077&v=912006247&uuid=39b5a3dcdf8036eed60b715858094cd0fb3154d23132da8093a365aee0d0df8d","t":"CT|GuangDong_ShenZhen-218.17.162.133","z":"dongguan7_ct","h":"0","e":"0"}};
 
 
-
-
-
-
-
 GET /api/handleQidan?key=10020202ddf238a3ed4b7fbac0e1c989&id=863738029982338&did=111f06eb663f6406&version=4.9.1&type=json&udid=5cd436af4856be7f&openudid=5cd436af4856be7f&uniqid=2f904dae9c18a3fa0ff466bf848b17f1&platform=GPhone&ua=X9007&device_id=863738029982338&os=4.4.2&getimg=1&ckuid=863738029982338&op=list&albumId=&tvId= HTTP/1.1
 Host: iface.iqiyi.com
 Connection: Keep-Alive
-
-
 
 
 GET http://iface.iqiyi.com/api/handleQidan?key=10020202ddf238a3ed4b7fbac0e1c989&id=863738029982338&did=111f06eb663f6406&version=4.9.1&type=json&udid=5cd436af4856be7f&openudid=5cd436af4856be7f&uniqid=2f904dae9c18a3fa0ff466bf848b17f1&platform=GPhone&ua=X9007&device_id=863738029982338&os=4.4.2&getimg=1&ckuid=863738029982338&op=list&albumId=&tvId= HTTP/1.1
@@ -84,10 +74,6 @@ http://data.video.qiyi.com/videos/v0/20140605/85/5e/e1/b116ed4938f64129bc88ff624
 var videoUrl={code:"A00000",data:{"l":"**http://183.61.167.40/videos/v0/20140605/85/5e/e1/b116ed4938f64129bc88ff6245121a01.mp4**?key=df30f95ba418d3f5&path=/data8/www&v=912006247&uuid=39b5a3dcdf8036eed60b715858094cd02f3e4f436d23e9859e3fe551345ba960","t":"CT|GuangDong_ShenZhen-218.17.162.133","z":"dongguan7_ct","h":"0","e":"1"}};
 
 这就是下载地址！ Bingo
-
-
-
-
 
 
 
