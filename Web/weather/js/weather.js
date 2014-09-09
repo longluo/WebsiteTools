@@ -1,7 +1,7 @@
 // Docs at http://simpleweatherjs.com
 $(document).ready(function() {
     $.simpleWeather({
-        location: 'Shenzhen, China',
+        location: 'Shenzhen, CN',
         woeid: '2161853',
         unit: 'c',
         success: function(weather) {

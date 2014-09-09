@@ -74,8 +74,10 @@
               weather.thumbnail = image404;
               weather.image = image404;
             } else {
-              weather.thumbnail = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.condition.code+"ds.png";
-              weather.image = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.condition.code+"d.png";
+//              weather.thumbnail = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.condition.code+"ds.png";
+//              weather.image = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.condition.code+"d.png";
+              weather.thumbnail = "http://imagesresource.qiniudn.com/icons%2Fweather%2Fbig%2F"+result.item.condition.code+".png";
+              weather.image = "http://imagesresource.qiniudn.com/icons%2Fweather%2Fsmall%2F"+result.item.condition.code+".png";
             }
 
             weather.alt = {temp: getAltTemp(options.unit, result.item.condition.temp), high: getAltTemp(options.unit, result.item.forecast[0].high), low: getAltTemp(options.unit, result.item.forecast[0].low)};
@@ -94,8 +96,10 @@
                 forecast.thumbnail = image404;
                 forecast.image = image404;
               } else {
-                forecast.thumbnail = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.forecast[i].code+"ds.png";
-                forecast.image = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.forecast[i].code+"d.png";
+//                forecast.thumbnail = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.forecast[i].code+"ds.png";
+//                forecast.image = "https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"+result.item.forecast[i].code+"d.png";
+                  forecast.thumbnail = "http://imagesresource.qiniudn.com/icons%2Fweather%2Fsmall%2F"+result.item.forecast[i].code+".png";
+                  forecast.image = "http://imagesresource.qiniudn.com/icons%2Fweather%2Fbig%2F"+result.item.forecast[i].code+".png";
               }
 
               weather.forecast.push(forecast);
