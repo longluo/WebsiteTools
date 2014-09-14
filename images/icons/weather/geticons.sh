@@ -1,5 +1,12 @@
 #!/bin/bash
-
+# 
+#  Decription: 
+#		A Shell script used to download the imges from Internet.
+#  Author:
+#       Long Luo
+#  Date:
+#       2014-09-11 00:16:59
+#
 
 BASE_URL="https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/"
 
@@ -27,23 +34,26 @@ for ((i=0; i<49;i++)); do
 
 done
 
-# URL_ARRAY=(
-# 'http://www.example.file1.jpg'
-# 'http://www.example.file2.jpg'
-# )
+# Method 2
 
-# NAME_ARRAY=(
-# 'file1.jpg'
-# 'file2.jpg'
-# )
+URL_ARRAY=(
+'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/0d.png'
+'https://s.yimg.com/zz/combo?a/i/us/nws/weather/gr/1d.png'
+)
 
-# ELEMENTS=${#URL_ARRAY[@]}
+NAME_ARRAY=(
+'file1.jpg'
+'file2.jpg'
+)
 
-# for (( i=0;i<ELEMENTS;i++)); do
+ELEMENTS=${#URL_ARRAY[@]}
 
-# 	echo ${URL_ARRAY[${i}]}
-# 	echo "saved as ${NAME_ARRAY[${i}]}"
-# 	curl ${URL_ARRAY[${i}]} -o images/${NAME_ARRAY[${i}]}
-# 	sleep 1
+for (( i=0;i<ELEMENTS;i++)); do
+	echo ${URL_ARRAY[${i}]}
+	echo "saved as ${NAME_ARRAY[${i}]}"
+ 	curl ${URL_ARRAY[${i}]} -o images/${NAME_ARRAY[${i}]}
+	sleep 1
 	
-# done
+done
+
+
