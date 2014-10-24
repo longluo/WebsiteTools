@@ -307,7 +307,7 @@ CDATA部分不能包含字符串 "]]>"。也不允许嵌套的CDATA部分。
 
 ## XML树结构
 
-XML文档形成了一种树结构，它从“根部”开始，然后扩展到“枝叶”。
+**XML文档形成了一种树结构，它从“根部”开始，然后扩展到“枝叶”。**
 
 ### 1. 一个XML文档实例
 
@@ -364,18 +364,25 @@ XML解析之前，我们必须系统性的学习一下XML DOM知识：
 
 ### 1. 定义 
 
-XML DOM(**XML Document Object Model**) 定义了访问和操作 XML 文档的标准方法。
+XML DOM(**XML Document Object Model**) 定义了访问和操作XML文档的标准方法。
 
 DOM把XML文档作为树结构来查看。能够通过DOM树来访问所有元素。可以修改或删除它们的内容，并创建新的元素。元素，它们的文本，以及它们的属性，都被认为是节点。
 
-在下面的例子中，我们使用 DOM 引用从`<to>`元素中获取文本：
+XML DOM是：
 
-	xmlDoc.getElementsByTagName("to")[0].childNodes[0].nodeValue
-	xmlDoc -由解析器创建的 XML 文档
-	getElementsByTagName("to")[0] - 第一个 <to> 元素
-	childNodes[0] - <to> 元素的第一个子元素（文本节点）
-	nodeValue - 节点的值（文本本身）
+- 用于XML的标准对象模型
+- 用于XML的标准编程接口
+- 中立于平台和语言
+- W3C的标准
 
+XML DOM定义了所有XML元素的对象和属性，以及访问它们的方法（接口）。
+
+换句话说：
+
+	XML DOM是用于获取、更改、添加或删除XML元素的标准
+
+
+##### DOM将XML文档作为一个树形结构，而树叶被定义为节点。
 
 
 ## XML如何解析？
@@ -680,7 +687,7 @@ JSON采用完全独立于语言的文本格式，但是也使用了类似于C语
 
 ## 4. JSON vs. XML
 
-### 相比 XML 的不同之处
+### JSON相比XML的不同之处
 
 - 没有结束标签
 - 更短
@@ -689,7 +696,7 @@ JSON采用完全独立于语言的文本格式，但是也使用了类似于C语
 - 使用数组
 - 不使用保留字
 
-### JSON 比 XML 更小、更快，更易解析。
+### 总之： JSON 比 XML 更小、更快，更易解析。
 
 
 ## XML和JSON的区别：
@@ -698,7 +705,6 @@ XML和JSON的主要组成成分：
 
 	XML是element、attribute和element content。
 	JSON是object、array、string、number、boolean(true/false)和null。
-
 
 XML要表示一个object(指name-value pair的集合)，最初可能会使用element作为object，每个key-value pair 用 attribute 表示：
 
@@ -714,7 +720,7 @@ XML要表示一个object(指name-value pair的集合)，最初可能会使用ele
 	        ...
 	    </address>
 	</student>
-那么，什么时候用element，什么时候用attribute，就已经是一个问题了。[1] 提到一些优缺点。
+那么，什么时候用element，什么时候用attribute，就已经是一个问题了。
 
 而JSON因为有object这种类型，可以自然地映射，不需考虑上述的问题，自然地得到以下的格式。
 
@@ -733,14 +739,20 @@ XML要表示一个object(指name-value pair的集合)，最初可能会使用ele
 除此以外，
 
 XML需要选择怎么处理element content的换行，而JSON string则不须作这个选择。
-XML只有文字，没有预设的数字格式，而JSON则有明确的number格式，这样在locale上也安全。
-XML映射数组没大问题，就是数组元素tag比较重复冗余。JSON 比较易读。
-JSON的true/false/null也能容易统一至一般编程语言的对应语义。
 
+XML只有文字，没有预设的数字格式，而JSON则有明确的number格式，这样在locale上也安全。
+
+XML映射数组没大问题，就是数组元素tag比较重复冗余。JSON 比较易读
+。
+JSON的true/false/null也能容易统一至一般编程语言的对应语义。
 
 XML文档可以附上DTD、Schema，还有一堆的诸如XPath之类规范，使用自定义XML元素或属性，能很方便地给数据附加各种约束条件和关联额外信息，从数据表达能力上看，XML强于Json，但是很多场景并不需要这么复杂的重量级的东西，轻便灵活的Json就显得很受欢迎了。
 
-打个比方，如果完成某件事有两种方式：一种简单的，一个复杂的。你选哪个？我只想杀只鸡罢了，用得着牛刀？Json与XML相比就是这样的。
+打个比方，如果完成某件事有两种方式：一种简单的，一个复杂的。你选哪个？
+
+我只想杀只鸡罢了，用得着牛刀？
+
+Json与XML相比就是这样的。
 
 
 ## 5. 如何解析JSON？
